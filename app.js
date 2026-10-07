@@ -523,8 +523,8 @@ const dictionary = {
   'Coursework centered on agent orchestration and RAG, applied to AI-assisted software engineering.': ['Cursada centrada en orquestación de agentes y RAG, aplicada a la ingeniería de software asistida por IA.', 'Curso centrado em orquestração de agentes e RAG, aplicado à engenharia de software assistida por IA.'],
 
   // Positioning aligned to CV
-  '· Frontend & Identity · AI-Native Development': ['· Frontend e identidad · Desarrollo nativo de IA', '· Frontend e identidade · Desenvolvimento nativo de IA'],
-  'Senior Software Engineer · Frontend & Identity · AI-Native Development': ['Ingeniero de Software Senior · Frontend e identidad · Desarrollo nativo de IA', 'Engenheiro de Software Sênior · Frontend e identidade · Desenvolvimento nativo de IA'],
+  '· Full Stack · AI-Native Development': ['· Full Stack · Desarrollo nativo de IA', '· Full Stack · Desenvolvimento nativo de IA'],
+  'Senior Software Engineer · Full Stack · AI-Native Development': ['Ingeniero de Software Senior · Full Stack · Desarrollo nativo de IA', 'Engenheiro de Software Sênior · Full Stack · Desenvolvimento nativo de IA'],
   'Open to Senior Software Engineer Roles · Remote / Hybrid': ['Abierto a roles de Ingeniero de Software Senior · Remoto / Híbrido', 'Aberto a posições de Engenheiro de Software Sênior · Remoto / Híbrido'],
   'Auth & Identity Frontend': ['Frontend de auth e identidad', 'Frontend de auth e identidade'],
 
@@ -623,7 +623,7 @@ function overview() {
   return layout('overview', `
     <section class="shell overview-hero">
       <div class="availability"><span class="status-dot pulse"></span> ${t('Open to Senior Software Engineer Roles · Remote / Hybrid')}</div>
-      <h1>${t('Senior Software Engineer')} <span class="gradient-text">${t('· Frontend & Identity · AI-Native Development')}</span></h1>
+      <h1>${t('Senior Software Engineer')} <span class="gradient-text">${t('· Full Stack · AI-Native Development')}</span></h1>
       <p class="lead">${th('overview.lead')}</p>
       <div class="hero-actions"><a class="button button-light" href="assets/nicolas-costanza.pdf" download><span>↓</span> ${t('Download Resume')}</a><a class="button button-outline" href="#contact">✉ ${t('Get in Touch')}</a><a class="button button-ghost" href="#experience">${t('View Full Experience')} <span>→</span></a><button class="button button-ghost" type="button" data-copy-email>⧉ ${t('Copy Email')}</button></div>
       <div class="hero-stats"><div><strong>7 Yrs</strong><span>${t('Engineering Experience')}</span></div><div><strong class="cyan">50M+</strong><span>${t('Users in Production')}</span></div><div><strong>Mercado Libre</strong><span>${t('Auth & Identity Frontend')}</span></div><div><strong class="green">AI-Native</strong><span>${t('SDD · MCP · Agents')}</span></div></div>
@@ -760,7 +760,7 @@ function openModal(id) {
 function translateStatic() {
   document.querySelectorAll('[data-i18n]').forEach((element) => { element.textContent = t(element.dataset.i18n); });
   document.documentElement.lang = currentLanguage;
-  document.title = `Nicolás Costanza | ${t('Senior Software Engineer · Frontend & Identity · AI-Native Development')}`;
+  document.title = `Nicolás Costanza | ${t('Senior Software Engineer · Full Stack · AI-Native Development')}`;
   if (languageSelect) languageSelect.value = currentLanguage;
   const copyright = document.querySelector('#copyright-year');
   if (copyright) copyright.textContent = `© ${new Date().getFullYear()} ${t('Nicolás Costanza. All rights reserved.')}`;
