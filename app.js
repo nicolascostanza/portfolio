@@ -12,14 +12,14 @@ let currentLanguage = supportedLanguages.includes(localStorage.getItem('portfoli
 
 const htmlDictionary = {
   'overview.lead': {
-    en: '<strong>7+ years</strong> architecting mission-critical platforms at <strong>Mercado Libre</strong>. Specializing in high-throughput microfrontends, zero-trust authentication serving <strong>50M+ MAU</strong>, and autonomous AI-native engineering workflows with Claude Code and Model Context Protocol.',
-    es: '<strong>7+ años</strong> diseñando plataformas críticas en <strong>Mercado Libre</strong>. Especializado en microfrontends de alto rendimiento, autenticación zero-trust para <strong>50M+ MAU</strong> y flujos de ingeniería autónomos nativos de IA con Claude Code y Model Context Protocol.',
-    pt: '<strong>7+ anos</strong> projetando plataformas críticas no <strong>Mercado Libre</strong>. Especializado em microfrontends de alta performance, autenticação zero-trust servindo <strong>50M+ MAU</strong> e fluxos de engenharia autônomos nativos de IA com Claude Code e Model Context Protocol.',
+    en: '<strong>7 years</strong> building high-scale web products at <strong>Mercado Libre</strong>, Widergy and Radium Rocket. Currently focused on <strong>login &amp; 2FA microfrontends</strong> (factor selection, identification and orchestration) for <strong>50M+ MAU</strong>, frontend re-architecture, and AI-native engineering with Specification-Driven Development, MCP servers and Claude / Codex / Cursor agents.',
+    es: '<strong>7 años</strong> construyendo productos web de alta escala en <strong>Mercado Libre</strong>, Widergy y Radium Rocket. Actualmente enfocado en <strong>microfrontends de login y 2FA</strong> (selección de factores, identificación y orquestación) para <strong>50M+ MAU</strong>, rearquitectura de frontends y flujos de ingeniería nativos de IA con Desarrollo Guiado por Especificaciones, servidores MCP y agentes Claude / Codex / Cursor.',
+    pt: '<strong>7 anos</strong> construindo produtos web de alta escala no <strong>Mercado Libre</strong>, Widergy e Radium Rocket. Atualmente focado em <strong>microfrontends de login e 2FA</strong> (seleção de fatores, identificação e orquestração) para <strong>50M+ MAU</strong>, rearquitetura de frontends e engenharia nativa de IA com Desenvolvimento Guiado por Especificações, servidores MCP e agentes Claude / Codex / Cursor.',
   },
   'experience.meli.summary': {
-    en: "Leading frontend architecture and zero-trust auth microfrontends for Latin America's largest e-commerce platform serving 50M+ MAU with zero tolerance for systemic auth failure.",
-    es: 'Liderando la arquitectura frontend y microfrontends de autenticación zero-trust para la plataforma de e-commerce más grande de Latinoamérica, sirviendo 50M+ MAU con tolerancia cero a fallas sistémicas de autenticación.',
-    pt: 'Liderando a arquitetura frontend e microfrontends de autenticação zero-trust para a maior plataforma de e-commerce da América Latina, servindo 50M+ MAU com tolerância zero a falhas sistêmicas de autenticação.',
+    en: "Working on the login and 2FA frontend at Latin America's largest e-commerce platform. Building factor flows (factor selection, email and phone SMS / WhatsApp validation), identification and password steps, and the orchestration between decoupled microfrontends — while driving the re-architecture of the login frontends and AI-native SDD / BDD workflows with Claude, Codex and Cursor.",
+    es: 'Trabajando en el frontend de login y 2FA de la plataforma de e-commerce más grande de Latinoamérica. Desarrollando los flujos de factores (selección de factores, validación de email y teléfono por SMS / WhatsApp), identificación y contraseña, y la orquestación entre microfrontends desacoplados; a la vez que lidero la rearquitectura de los frontends de login y los flujos de SDD / BDD nativos de IA con Claude, Codex y Cursor.',
+    pt: 'Trabalhando no frontend de login e 2FA da maior plataforma de e-commerce da América Latina. Desenvolvendo os fluxos de fatores (seleção de fatores, validação de e-mail e telefone por SMS / WhatsApp), identificação e senha, e a orquestração entre microfrontends desacoplados — além de liderar a rearquitetura dos frontends de login e os fluxos de SDD / BDD nativos de IA com Claude, Codex e Cursor.',
   },
 };
 
@@ -45,7 +45,7 @@ const dictionary = {
   'Senior software engineer building resilient web platforms, AI-native development workflows and high-leverage systems from Rosario, Argentina.': ['Ingeniero de software senior construyendo plataformas web resilientes, flujos de desarrollo nativos de IA y sistemas de alto impacto desde Rosario, Argentina.', 'Engenheiro de software sênior construindo plataformas web resilientes, fluxos de desenvolvimento nativos de IA e sistemas de alto impacto em Rosario, Argentina.'],
 
   // Overview
-  'Open to Staff IC & AI Architect Roles · Remote / Hybrid': ['Abierto a roles Staff IC y Arquitecto de IA · Remoto / Híbrido', 'Aberto a posições Staff IC e Arquiteto de IA · Remoto / Híbrido'],
+  'Open to Senior & AI Architect Roles · Remote / Hybrid': ['Abierto a roles Senior y Arquitecto de IA · Remoto / Híbrido', 'Aberto a posições Sênior e Arquiteto de IA · Remoto / Híbrido'],
   'Senior Software Engineer &': ['Ingeniero de Software Senior y', 'Engenheiro de Software Sênior e'],
   'AI Architect': ['Arquitecto de IA', 'Arquiteto de IA'],
   'Download Resume': ['Descargar CV', 'Baixar CV'],
@@ -77,8 +77,8 @@ const dictionary = {
   'AI-Native & Agentic': ['IA nativa y agéntica', 'IA nativa e agêntica'],
   'Agentic workflows that elevate software engineering throughput, precision and verifiability.': ['Flujos agénticos que elevan el rendimiento, la precisión y la verificabilidad de la ingeniería de software.', 'Fluxos agênticos que elevam a produtividade, a precisão e a verificabilidade da engenharia de software.'],
   'Recruiter & architectural inquiries': ['Consultas de recruiters y arquitectura', 'Consultas de recrutadores e arquitetura'],
-  'Hiring for a Senior IC or AI Architect role?': ['¿Buscás un Senior IC o Arquitecto de IA?', 'Procurando um Senior IC ou Arquiteto de IA?'],
-  'Open to leadership conversations, staff engineering challenges and building next-generation web and AI systems.': ['Abierto a conversaciones de liderazgo, desafíos de ingeniería staff y a construir sistemas web y de IA de nueva generación.', 'Aberto a conversas de liderança, desafios de engenharia staff e a construir sistemas web e de IA de nova geração.'],
+  'Hiring a Senior Engineer or AI Architect?': ['¿Buscás un Senior o Arquitecto de IA?', 'Procurando um Sênior ou Arquiteto de IA?'],
+  'Open to leadership conversations, senior engineering challenges and building next-generation web and AI systems.': ['Abierto a conversaciones de liderazgo, desafíos de ingeniería senior y a construir sistemas web y de IA de nueva generación.', 'Aberto a conversas de liderança, desafios de engenharia sênior e a construir sistemas web e de IA de nova geração.'],
   'Schedule Interview': ['Agendar entrevista', 'Agendar entrevista'],
 
   // Experience view
@@ -120,8 +120,8 @@ const dictionary = {
   'Performance, Observability & JWT Security': ['Performance, observabilidad y seguridad JWT', 'Performance, observabilidade e segurança JWT'],
   'Decreased MTTD by 60% with automated Sentry releases and source maps while deploying cryptographic JWT refresh rotation across Node microservices.': ['Reduje el MTTD un 60% con releases automatizados de Sentry y source maps, desplegando rotación criptográfica de JWT en microservicios Node.', 'Reduzi o MTTD em 60% com releases automatizados do Sentry e source maps, implantando rotação criptográfica de JWT em microsserviços Node.'],
   'Immediate impact opportunity': ['Oportunidad de impacto inmediato', 'Oportunidade de impacto imediato'],
-  'Looking for a Senior IC or Tech Lead?': ['¿Buscás un Senior IC o Tech Lead?', 'Procurando um Senior IC ou Tech Lead?'],
-  'Available for senior engineering, staff frontend and AI architecture roles in distributed international teams.': ['Disponible para roles senior de ingeniería, frontend staff y arquitectura de IA en equipos internacionales distribuidos.', 'Disponível para posições sênior de engenharia, frontend staff e arquitetura de IA em equipes internacionais distribuídas.'],
+  'Looking for a Senior Engineer or Tech Lead?': ['¿Buscás un Senior o Tech Lead?', 'Procurando um Sênior ou Tech Lead?'],
+  'Available for senior engineering, frontend and AI architecture roles in distributed international teams.': ['Disponible para roles senior de ingeniería, frontend y arquitectura de IA en equipos internacionales distribuidos.', 'Disponível para posições sênior de engenharia, frontend e arquitetura de IA em equipes internacionais distribuídas.'],
   'Download Full CV (PDF)': ['Descargar CV completo (PDF)', 'Baixar CV completo (PDF)'],
   'Schedule Intro Call': ['Agendar llamada inicial', 'Agendar chamada inicial'],
 
@@ -181,7 +181,7 @@ const dictionary = {
   'Human approval before write': ['Aprobación humana antes de escribir', 'Aprovação humana antes de escrever'],
   '> Ready for instructions. Click "Execute Agent Loop" above.': ['> Listo para instrucciones. Hacé clic en "Ejecutar loop del agente".', '> Pronto para instruções. Clique em "Executar loop do agente".'],
   'Want to review architectural designs or code samples?': ['¿Querés revisar diseños arquitectónicos o muestras de código?', 'Quer revisar designs arquiteturais ou amostras de código?'],
-  'Available for senior architectural consultations, lead staff engineer discussions and autonomous AI system design reviews.': ['Disponible para consultorías de arquitectura senior, discusiones de staff engineer y revisiones de diseño de sistemas autónomos de IA.', 'Disponível para consultorias de arquitetura sênior, discussões de staff engineer e revisões de design de sistemas autônomos de IA.'],
+  'Available for senior architectural consultations, senior engineer discussions and autonomous AI system design reviews.': ['Disponible para consultorías de arquitectura senior, discusiones con ingenieros senior y revisiones de diseño de sistemas autónomos de IA.', 'Disponível para consultorias de arquitetura sênior, discussões com engenheiros sênior e revisões de design de sistemas autônomos de IA.'],
 
   // Stack
   'Technical Capabilities & Proficiency': ['Capacidades y competencias técnicas', 'Capacidades e competências técnicas'],
@@ -246,7 +246,7 @@ const dictionary = {
   '// Nicolás Costanza — High-Assurance Architectural Guardrails': ['// Nicolás Costanza — Guardarraíles arquitectónicos de alta confiabilidad', '// Nicolás Costanza — Guardrails arquiteturais de alta confiabilidade'],
   'Open to senior engineering & AI architect leadership roles': ['Abierto a roles de liderazgo en ingeniería y arquitectura de IA', 'Aberto a posições de liderança em engenharia e arquitetura de IA'],
   'Ready to scale your technical infrastructure?': ['¿Listo para escalar tu infraestructura técnica?', 'Pronto para escalar sua infraestrutura técnica?'],
-  'Available for remote Staff / Principal Frontend, systems architecture and AI-native engineering advisory.': ['Disponible para roles remotos Staff / Principal Frontend, arquitectura de sistemas y asesoría en ingeniería nativa de IA.', 'Disponível para posições remotas Staff / Principal Frontend, arquitetura de sistemas e consultoria em engenharia nativa de IA.'],
+  'Available for remote Senior / Lead Frontend, systems architecture and AI-native engineering advisory.': ['Disponible para roles remotos Senior / Lead Frontend, arquitectura de sistemas y asesoría en ingeniería nativa de IA.', 'Disponível para posições remotas Sênior / Lead Frontend, arquitetura de sistemas e consultoria em engenharia nativa de IA.'],
   'Initiate Technical Interview': ['Iniciar entrevista técnica', 'Iniciar entrevista técnica'],
   'Download Detailed Resume': ['Descargar CV detallado', 'Baixar CV detalhado'],
 
@@ -350,6 +350,177 @@ const dictionary = {
   'White-Label Utility Mobile Architecture': ['Arquitectura mobile white-label para utilities', 'Arquitetura mobile white-label para utilities'],
   'A unified codebase powers customized utility and IoT applications through build-time configuration, runtime theme tokens and feature flags.': ['Una codebase unificada impulsa aplicaciones de utilities e IoT a medida mediante configuración en build-time, tokens de tema en runtime y feature flags.', 'Uma codebase unificada alimenta aplicações de utilities e IoT personalizadas via configuração em build-time, tokens de tema em runtime e feature flags.'],
   'Client builds from one architecture.': ['Builds de clientes desde una sola arquitectura.', 'Builds de clientes a partir de uma única arquitetura.'],
+
+  // Overview — corrected featured / stack
+  'Login & 2FA Microfrontends': ['Microfrontends de login y 2FA', 'Microfrontends de login e 2FA'],
+  'Login / 2FA': ['Login / 2FA', 'Login / 2FA'],
+  'Building the identity frontend at Mercado Libre: factor selection, email / SMS / WhatsApp validation, identification and password steps orchestrated across decoupled microfrontends, plus an ongoing re-architecture.': ['Construyendo el frontend de identidad en Mercado Libre: selección de factores, validación de email / SMS / WhatsApp, identificación y contraseña orquestados entre microfrontends desacoplados, más una rearquitectura en curso.', 'Construindo o frontend de identidade no Mercado Libre: seleção de fatores, validação de e-mail / SMS / WhatsApp, identificação e senha orquestrados entre microfrontends desacoplados, além de uma rearquitetura em andamento.'],
+  'AI-Native Engineering: SDD & MCP': ['Ingeniería nativa de IA: SDD y MCP', 'Engenharia nativa de IA: SDD e MCP'],
+  'Adopted Specification-Driven and BDD workflows with Claude, Codex and Cursor; built internal MCP servers, Skills and Plugins and agentified repositories with AGENTS.md.': ['Adopté flujos de Desarrollo Guiado por Especificaciones y BDD con Claude, Codex y Cursor; construí servidores MCP internos, Skills y Plugins y agentifiqué repositorios con AGENTS.md.', 'Adotei fluxos de Desenvolvimento Guiado por Especificações e BDD com Claude, Codex e Cursor; construí servidores MCP internos, Skills e Plugins e agentifiquei repositórios com AGENTS.md.'],
+  'SDD / BDD': ['SDD / BDD', 'SDD / BDD'],
+  'Codex / Cursor': ['Codex / Cursor', 'Codex / Cursor'],
+  'AGENTS.md': ['AGENTS.md', 'AGENTS.md'],
+  'White-Label Utility Platforms': ['Plataformas white-label para utilities', 'Plataformas white-label para utilities'],
+  'Customizable web and React Native apps for water, light and gas utility companies: a virtual office for payments, service requests, complaints and consumption tracking, branded per client.': ['Aplicaciones web y React Native personalizables para empresas de utilities de agua, luz y gas: una oficina virtual para pagar, solicitar visitas, hacer reclamos o consultas y ver consumos, con marca propia por cliente.', 'Aplicações web e React Native personalizáveis para empresas de utilities de água, luz e gás: um escritório virtual para pagar, solicitar visitas, abrir reclamações ou consultas e ver consumos, com marca própria por cliente.'],
+  'White-Label': ['White-label', 'White-label'],
+  'Utilities': ['Utilities', 'Utilities'],
+  'Modern JavaScript and TypeScript across web, mobile and Node.js backends.': ['JavaScript y TypeScript modernos en web, mobile y backends Node.js.', 'JavaScript e TypeScript modernos em web, mobile e backends Node.js.'],
+  'Frontend Architecture & Scale': ['Arquitectura frontend y escala', 'Arquitetura frontend e escala'],
+  'Login and identity frontends split into decoupled microfrontends, with a re-architecture in progress.': ['Frontends de login e identidad divididos en microfrontends desacoplados, con una rearquitectura en curso.', 'Frontends de login e identidade divididos em microfrontends desacoplados, com uma rearquitetura em andamento.'],
+  'Agentic workflows that raise engineering throughput, precision and verifiability.': ['Flujos agénticos que elevan el rendimiento, la precisión y la verificabilidad de la ingeniería.', 'Fluxos agênticos que elevam a produtividade, a precisão e a verificabilidade da engenharia.'],
+  'Claude / Codex / Cursor': ['Claude / Codex / Cursor', 'Claude / Codex / Cursor'],
+  'Skills & Plugins': ['Skills y plugins', 'Skills e plugins'],
+  'Login & 2FA Frontend': ['Frontend de login y 2FA', 'Frontend de login e 2FA'],
+  'SDD · MCP · Agents': ['SDD · MCP · agentes', 'SDD · MCP · agentes'],
+
+  // Experience — corrected Meli / Widergy / Radium
+  'Build and maintain the login factor flows: factor selection, email and phone (SMS / WhatsApp) validation, identification and password steps, orchestrated across decoupled microfrontends.': ['Desarrollo y mantengo los flujos de factores de login: selección de factores, validación de email y teléfono (SMS / WhatsApp), identificación y contraseña, orquestados entre microfrontends desacoplados.', 'Desenvolvo e mantenho os fluxos de fatores de login: seleção de fatores, validação de e-mail e telefone (SMS / WhatsApp), identificação e senha, orquestrados entre microfrontends desacoplados.'],
+  'Frontend Re-Architecture': ['Rearquitectura de frontend', 'Rearquitetura de frontend'],
+  'Leading the re-architecture of the login frontends to reduce coupling and let squads ship changes independently.': ['Liderando la rearquitectura de los frontends de login para reducir el acoplamiento y permitir que las squads desplieguen cambios de forma independiente.', 'Liderando a rearquitetura dos frontends de login para reduzir o acoplamento e permitir que as squads façam deploy de mudanças de forma independente.'],
+  'Drove Specification-Driven and BDD workflows with Claude, Codex and Cursor; built MCP servers, Skills and Plugins and agentified repositories with AGENTS.md.': ['Impulsé flujos de Desarrollo Guiado por Especificaciones y BDD con Claude, Codex y Cursor; construí servidores MCP, Skills y Plugins y agentifiqué repositorios con AGENTS.md.', 'Impulsionei fluxos de Desenvolvimento Guiado por Especificações e BDD com Claude, Codex e Cursor; construí servidores MCP, Skills e Plugins e agentifiquei repositórios com AGENTS.md.'],
+  'Shared Architecture Documentation': ['Documentación de arquitectura compartida', 'Documentação de arquitetura compartilhada'],
+  'Contributed to a shared documentation system that gives AI the big picture of how microservices and microfrontends interconnect.': ['Contribuí a un sistema de documentación compartida que le da a la IA la visión completa de cómo se interconectan los microservicios y microfrontends.', 'Contribuí com um sistema de documentação compartilhada que dá à IA a visão completa de como microsserviços e microfrontends se interconectam.'],
+  'Built white-label web and mobile products for water, light and gas utility companies, with customizable apps per client.': ['Construí productos web y mobile white-label para empresas de utilities de agua, luz y gas, con aplicaciones personalizables por cliente.', 'Construí produtos web e mobile white-label para empresas de utilities de água, luz e gás, com aplicações personalizáveis por cliente.'],
+  'White-Label Architecture': ['Arquitectura white-label', 'Arquitetura white-label'],
+  'Built customizable applications where branding, services and flows are configured per utility company from a shared codebase.': ['Construí aplicaciones personalizables donde la marca, los servicios y los flujos se configuran por empresa desde una codebase compartida.', 'Construí aplicações personalizáveis onde marca, serviços e fluxos são configurados por empresa a partir de uma codebase compartilhada.'],
+  'Virtual Office (Web & Mobile)': ['Oficina virtual (web y mobile)', 'Escritório virtual (web e mobile)'],
+  'Delivered payment, service-request, complaint and consumption-tracking flows in both React (web) and React Native (mobile).': ['Entregué flujos de pagos, solicitud de visitas, reclamos y seguimiento de consumos tanto en React (web) como en React Native (mobile).', 'Entreguei fluxos de pagamentos, solicitação de visitas, reclamações e acompanhamento de consumo tanto em React (web) quanto em React Native (mobile).'],
+  'REST APIs': ['APIs REST', 'APIs REST'],
+  'Utilities (Water, Light & Gas)': ['Utilities (agua, luz y gas)', 'Utilities (água, luz e gás)'],
+  'Built Qira Global, an agri-tech e-commerce, and Qira Pagos, its payment wallet. Full-stack work with Node.js, Express, React and MongoDB, then React Native.': ['Construí Qira Global, un e-commerce agri-tech, y Qira Pagos, su wallet de pagos. Trabajo full-stack con Node.js, Express, React y MongoDB, y luego React Native.', 'Construí o Qira Global, um e-commerce agri-tech, e o Qira Pagos, sua wallet de pagamentos. Trabalho full-stack com Node.js, Express, React e MongoDB, e depois React Native.'],
+  'Qira Global Backoffice (RBAC)': ['Backoffice de Qira Global (RBAC)', 'Backoffice do Qira Global (RBAC)'],
+  'Developed a large backoffice with multiple roles — admin, distributor, producer, customer and vendor — over an agri-commerce catalog.': ['Desarrollé un backoffice grande con múltiples roles — admin, distribuidor, productor, cliente y vendedor — sobre un catálogo de agri-commerce.', 'Desenvolvi um backoffice grande com múltiplos papéis — admin, distribuidor, produtor, cliente e vendedor — sobre um catálogo de agri-commerce.'],
+  'Full-Stack E-Commerce': ['E-commerce full-stack', 'E-commerce full-stack'],
+  'Shipped features end-to-end with Node.js, Express, React and MongoDB across the platform.': ['Entregué features end-to-end con Node.js, Express, React y MongoDB en toda la plataforma.', 'Entreguei features end-to-end com Node.js, Express, React e MongoDB em toda a plataforma.'],
+  'Qira Pagos Wallet': ['Wallet Qira Pagos', 'Wallet Qira Pagos'],
+  'Built a React Native wallet integrated with the e-commerce so customers could pay from the app.': ['Construí una wallet en React Native integrada con el e-commerce para que los clientes pudieran pagar desde la app.', 'Construí uma wallet em React Native integrada ao e-commerce para que os clientes pudessem pagar pelo app.'],
+  'Agri-tech & E-commerce': ['Agri-tech y e-commerce', 'Agri-tech e e-commerce'],
+
+  // Experience metrics / header
+  'Years · Full-stack & frontend': ['Años · Full-stack y frontend', 'Anos · Full-stack e frontend'],
+  'MAU at Mercado Libre': ['MAU en Mercado Libre', 'MAU no Mercado Libre'],
+  'Identity frontend': ['Frontend de identidad', 'Frontend de identidade'],
+  'Focus': ['Foco', 'Foco'],
+  '7 years building high-scale web products at Mercado Libre, Widergy and Radium Rocket — identity and login frontends, frontend re-architecture and AI-native engineering with SDD, MCP and agents.': ['7 años construyendo productos web de alta escala en Mercado Libre, Widergy y Radium Rocket — frontends de identidad y login, rearquitectura de frontends e ingeniería nativa de IA con SDD, MCP y agentes.', '7 anos construindo produtos web de alta escala no Mercado Libre, Widergy e Radium Rocket — frontends de identidade e login, rearquitetura de frontends e engenharia nativa de IA com SDD, MCP e agentes.'],
+
+  // AI Lab — corrected
+  'Curated selection of real production work across identity frontends, agentic AI tooling, fintech and white-label mobile.': ['Selección curada de trabajo real en producción: frontends de identidad, tooling de IA agéntica, fintech y mobile white-label.', 'Seleção curada de trabalho real em produção: frontends de identidade, tooling de IA agêntica, fintech e mobile white-label.'],
+  'Years Experience': ['Años de experiencia', 'Anos de experiência'],
+  'Companies': ['Empresas', 'Empresas'],
+  'Engineering Profile': ['Perfil de ingeniería', 'Perfil de engenharia'],
+  'AI-Native Dev System: MCP, Skills & Plugins': ['Sistema de desarrollo nativo de IA: MCP, Skills y Plugins', 'Sistema de desenvolvimento nativo de IA: MCP, Skills e Plugins'],
+  'Internal tooling for agentic engineering: MCP servers, reusable Skills and Plugins, plus AGENTS.md conventions that let Claude, Codex and Cursor work inside our repositories.': ['Tooling interno para ingeniería agéntica: servidores MCP, Skills y Plugins reutilizables, más convenciones AGENTS.md que permiten a Claude, Codex y Cursor trabajar dentro de nuestros repositorios.', 'Tooling interno para engenharia agêntica: servidores MCP, Skills e Plugins reutilizáveis, além de convenções AGENTS.md que permitem Claude, Codex e Cursor trabalhar dentro dos nossos repositórios.'],
+  'Internal AI Tooling': ['Tooling interno de IA', 'Tooling interno de IA'],
+  'Agents in the loop': ['Agentes en el loop', 'Agentes no loop'],
+  'Specification-Driven Development Workflow': ['Flujo de desarrollo guiado por especificaciones', 'Fluxo de desenvolvimento guiado por especificações'],
+  'SDD and BDD workflow where structured specs are the source of truth and agents generate and verify code, with shared architecture docs as context.': ['Flujo de SDD y BDD donde las specs estructuradas son la fuente de verdad y los agentes generan y verifican código, con documentación de arquitectura compartida como contexto.', 'Fluxo de SDD e BDD onde as specs estruturadas são a fonte de verdade e os agentes geram e verificam código, com documentação de arquitetura compartilhada como contexto.'],
+  'Spec & Agent Workflow': ['Flujo de specs y agentes', 'Fluxo de specs e agentes'],
+  'Spec-first': ['Spec-first', 'Spec-first'],
+  'Enterprise · Identity': ['Enterprise · identidad', 'Enterprise · identidade'],
+  'Fintech · Mobile': ['Fintech · mobile', 'Fintech · mobile'],
+  'Integrated payments': ['Pagos integrados', 'Pagamentos integrados'],
+  'White-Label Utility Apps': ['Apps de utilities white-label', 'Apps de utilities white-label'],
+  'Customizable React and React Native applications for water, light and gas utilities: payments, service requests, complaints and consumption tracking, branded per client.': ['Aplicaciones React y React Native personalizables para utilities de agua, luz y gas: pagos, solicitudes de visita, reclamos y seguimiento de consumos, con marca propia por cliente.', 'Aplicações React e React Native personalizáveis para utilities de água, luz e gás: pagamentos, solicitações de visita, reclamações e acompanhamento de consumo, com marca própria por cliente.'],
+  'White-Label Mobile': ['Mobile white-label', 'Mobile white-label'],
+  'Multi-client': ['Multi-cliente', 'Multi-cliente'],
+
+  // AI Lab verification panel
+  'Strict across web & mobile': ['Estricto en web y mobile', 'Estrito em web e mobile'],
+  'Typed web, mobile and backend codebases.': ['Codebases tipados en web, mobile y backend.', 'Codebases tipados em web, mobile e backend.'],
+  'TESTING': ['TESTING', 'TESTING'],
+  'Unit & E2E': ['Unitarios y E2E', 'Unitários e E2E'],
+  'Jest, React Testing Library, Cypress, WDIO and Playwright.': ['Jest, React Testing Library, Cypress, WDIO y Playwright.', 'Jest, React Testing Library, Cypress, WDIO e Playwright.'],
+  'AI WORKFLOW': ['FLUJO DE IA', 'FLUXO DE IA'],
+  'SDD & MCP': ['SDD y MCP', 'SDD e MCP'],
+  'Spec-driven development with agents.': ['Desarrollo guiado por specs con agentes.', 'Desenvolvimento guiado por specs com agentes.'],
+  'MICROFRONTENDS': ['MICROFRONTENDS', 'MICROFRONTENDS'],
+  'Login & 2FA': ['Login y 2FA', 'Login e 2FA'],
+  'Identity frontends shared across business units.': ['Frontends de identidad compartidos entre unidades de negocio.', 'Frontends de identidade compartilhados entre unidades de negócio.'],
+  'Context, not code': ['Contexto, no código', 'Contexto, não código'],
+  'AI lacks the big picture of how microservices and microfrontends interconnect, so teams re-explain architecture on every task.': ['La IA no tiene la visión completa de cómo se interconectan microservicios y microfrontends, así que los equipos reexplican la arquitectura en cada tarea.', 'A IA não tem a visão completa de como microsserviços e microfrontends se interconectam, então os times reexplicam a arquitetura a cada tarefa.'],
+  'The Shared Context Layer': ['La capa de contexto compartido', 'A camada de contexto compartilhado'],
+  'Specs, AGENTS.md and shared architecture docs give agents durable, verifiable context before they write code.': ['Las specs, AGENTS.md y la documentación de arquitectura compartida le dan a los agentes contexto durable y verificable antes de escribir código.', 'As specs, o AGENTS.md e a documentação de arquitetura compartilhada dão aos agentes contexto durável e verificável antes de escrever código.'],
+
+  // Stack
+  '7 Years': ['7 años', '7 anos'],
+  'TESTING COVERAGE': ['COBERTURA DE TESTS', 'COBERTURA DE TESTES'],
+  'Strict TypeScript, no unsafe any.': ['TypeScript estricto, sin any inseguro.', 'TypeScript estrito, sem any inseguro.'],
+  'Decoupled Microfrontends': ['Microfrontends desacoplados', 'Microfrontends desacoplados'],
+  'Login and identity frontends are split into independent microfrontends so squads can ship and refactor without blocking each other.': ['Los frontends de login e identidad se dividen en microfrontends independientes para que las squads desplieguen y refactoricen sin bloquearse entre sí.', 'Os frontends de login e identidade são divididos em microfrontends independentes para que as squads façam deploy e refatoração sem bloquear umas às outras.'],
+  'Independent deploys across squads': ['Deploys independientes entre squads', 'Deploys independentes entre squads'],
+  'AI-Assisted, Spec-Verified': ['Asistido por IA, verificado por specs', 'Assistido por IA, verificado por specs'],
+  'Agents build against shared specs and shared docs, with human review before changes land.': ['Los agentes construyen contra specs y documentación compartidas, con revisión humana antes de que los cambios aterricen.', 'Os agentes constroem contra specs e documentação compartilhadas, com revisão humana antes de as mudanças irem para produção.'],
+  'Claude, Codex and Cursor in the loop': ['Claude, Codex y Cursor en el loop', 'Claude, Codex e Cursor no loop'],
+
+  // Skills
+  'Built MCP servers, Skills and Plugins and agentified repositories with AGENTS.md conventions.': ['Construí servidores MCP, Skills y Plugins y agentifiqué repositorios con convenciones AGENTS.md.', 'Construí servidores MCP, Skills e Plugins e agentifiquei repositórios com convenções AGENTS.md.'],
+  'TypeScript across web, mobile and Node.js; Node.js and Express on the backend.': ['TypeScript en web, mobile y Node.js; Node.js y Express en el backend.', 'TypeScript em web, mobile e Node.js; Node.js e Express no backend.'],
+  'React and Next.js on the web, React Native on mobile, with a product / UX mindset.': ['React y Next.js en web, React Native en mobile, con mirada de producto / UX.', 'React e Next.js na web, React Native no mobile, com olhar de produto / UX.'],
+  'Product / UX': ['Producto / UX', 'Produto / UX'],
+  'Login and identity microfrontends with orchestration between them; leading frontend re-architecture.': ['Microfrontends de login e identidad con orquestación entre ellos; liderando la rearquitectura de frontends.', 'Microfrontends de login e identidade com orquestração entre eles; liderando a rearquitetura de frontends.'],
+  'Login Orchestration': ['Orquestación de login', 'Orquestração de login'],
+  'API Integration': ['Integración de APIs', 'Integração de APIs'],
+  'Authentication and authorization foundations, policy configuration, rate limiting and scope segmentation.': ['Fundamentos de autenticación y autorización, configuración de policies, rate limiting y segmentación de scopes.', 'Fundamentos de autenticação e autorização, configuração de policies, rate limiting e segmentação de escopos.'],
+  'AuthN / AuthZ': ['AuthN / AuthZ', 'AuthN / AuthZ'],
+  'Auth Policies': ['Policies de auth', 'Policies de auth'],
+  'Rate Limiting': ['Rate limiting', 'Rate limiting'],
+  'Scopes': ['Scopes', 'Scopes'],
+  'JWT': ['JWT', 'JWT'],
+  'Unit and E2E testing with Jest, React Testing Library, Cypress, WDIO and Playwright.': ['Testing unitario y E2E con Jest, React Testing Library, Cypress, WDIO y Playwright.', 'Testes unitários e E2E com Jest, React Testing Library, Cypress, WDIO e Playwright.'],
+  'React Testing Library': ['React Testing Library', 'React Testing Library'],
+  'WebdriverIO': ['WebdriverIO', 'WebdriverIO'],
+  'Playwright': ['Playwright', 'Playwright'],
+
+  // Education
+  'Auth & Application Security': ['Auth y seguridad de aplicaciones', 'Auth e segurança de aplicações'],
+  'Authentication and authorization layer work: policies, AuthN / AuthZ, rate limiting and scope segmentation.': ['Trabajo en la capa de autenticación y autorización: policies, AuthN / AuthZ, rate limiting y segmentación de scopes.', 'Trabalho na camada de autenticação e autorização: policies, AuthN / AuthZ, rate limiting e segmentação de escopos.'],
+
+  // Modals & visuals
+  'Agentic Dev Tooling': ['Tooling de desarrollo agéntico', 'Tooling de desenvolvimento agêntico'],
+  'Internal toolchain for agentic engineering: MCP servers, reusable Skills and Plugins plus AGENTS.md conventions so Claude, Codex and Cursor work inside our repositories.': ['Toolchain interno para ingeniería agéntica: servidores MCP, Skills y Plugins reutilizables y convenciones AGENTS.md para que Claude, Codex y Cursor trabajen dentro de nuestros repositorios.', 'Toolchain interno para engenharia agêntica: servidores MCP, Skills e Plugins reutilizáveis e convenções AGENTS.md para que Claude, Codex e Cursor trabalhem dentro dos nossos repositórios.'],
+  'Servers, Skills & Plugins.': ['Servidores, Skills y Plugins.', 'Servidores, Skills e Plugins.'],
+  'Identity Frontend': ['Frontend de identidad', 'Frontend de identidade'],
+  'Login and 2FA frontend at Mercado Libre: factor selection, email / SMS / WhatsApp validation, identification and password steps across decoupled microfrontends.': ['Frontend de login y 2FA en Mercado Libre: selección de factores, validación de email / SMS / WhatsApp, identificación y contraseña en microfrontends desacoplados.', 'Frontend de login e 2FA no Mercado Libre: seleção de fatores, validação de e-mail / SMS / WhatsApp, identificação e senha em microfrontends desacoplados.'],
+  'Identity frontend at scale.': ['Frontend de identidad a escala.', 'Frontend de identidade em escala.'],
+  'Spec-Driven Workflow': ['Flujo guiado por specs', 'Fluxo guiado por specs'],
+  'SDD & BDD with Agents': ['SDD y BDD con agentes', 'SDD e BDD com agentes'],
+  'Specs are the source of truth; agents generate and verify code with shared architecture docs as context.': ['Las specs son la fuente de verdad; los agentes generan y verifican código con documentación de arquitectura compartida como contexto.', 'As specs são a fonte de verdade; os agentes geram e verificam código com documentação de arquitetura compartilhada como contexto.'],
+  'Spec-first development.': ['Desarrollo spec-first.', 'Desenvolvimento spec-first.'],
+  'Agri-Tech Payments': ['Pagos agri-tech', 'Pagamentos agri-tech'],
+  'React Native wallet integrated with the Qira Global e-commerce so customers could pay from the app.': ['Wallet en React Native integrada con el e-commerce de Qira Global para que los clientes pudieran pagar desde la app.', 'Wallet em React Native integrada ao e-commerce do Qira Global para que os clientes pudessem pagar pelo app.'],
+  'Wallet': ['Wallet', 'Wallet'],
+  'Integrated with the store.': ['Integrada con la tienda.', 'Integrada à loja.'],
+  'One codebase powers customized water, light and gas utility apps: payments, service requests, complaints and consumption tracking.': ['Una sola codebase potencia apps personalizadas de utilities de agua, luz y gas: pagos, solicitudes de visita, reclamos y seguimiento de consumos.', 'Uma única codebase alimenta apps personalizados de utilities de água, luz e gás: pagamentos, solicitações de visita, reclamações e acompanhamento de consumo.'],
+  'Branded per utility.': ['Con marca propia por utility.', 'Com marca própria por utility.'],
+  'IDENTITY: LOGIN & 2FA': ['IDENTIDAD: LOGIN Y 2FA', 'IDENTIDADE: LOGIN E 2FA'],
+  'Factor selection, validation & orchestration': ['Selección de factores, validación y orquestación', 'Seleção de fatores, validação e orquestração'],
+  'PAYMENTS: QIRA PAGOS': ['PAGOS: QIRA PAGOS', 'PAGAMENTOS: QIRA PAGOS'],
+  'Wallet + store': ['Wallet + tienda', 'Wallet + loja'],
+  'Payments integrated with the e-commerce': ['Pagos integrados con el e-commerce', 'Pagamentos integrados ao e-commerce'],
+  'WHITE-LABEL: REACT NATIVE': ['WHITE-LABEL: REACT NATIVE', 'WHITE-LABEL: REACT NATIVE'],
+  'Multi-client apps': ['Apps multi-cliente', 'Apps multi-cliente'],
+  'Payments, service requests & consumption': ['Pagos, solicitudes y consumos', 'Pagamentos, solicitações e consumo'],
+
+  // Remaining corrected strings
+  'Identity frontend at Mercado Libre: factor selection, email / SMS / WhatsApp validation, identification and password steps orchestrated across decoupled microfrontends.': ['Frontend de identidad en Mercado Libre: selección de factores, validación de email / SMS / WhatsApp, identificación y contraseña orquestados entre microfrontends desacoplados.', 'Frontend de identidade no Mercado Libre: seleção de fatores, validação de e-mail / SMS / WhatsApp, identificação e senha orquestrados entre microfrontends desacoplados.'],
+  'Qira Pagos — Payment Wallet': ['Qira Pagos — wallet de pagos', 'Qira Pagos — wallet de pagamentos'],
+  'React Native wallet integrated with the Qira Global agri e-commerce so customers could pay from the app.': ['Wallet en React Native integrada con el e-commerce agri-tech de Qira Global para que los clientes pudieran pagar desde la app.', 'Wallet em React Native integrada ao e-commerce agri-tech do Qira Global para que os clientes pudessem pagar pelo app.'],
+  'Applied across production systems and AI-native workflows': ['Aplicado en sistemas de producción y flujos nativos de IA', 'Aplicado em sistemas de produção e fluxos nativos de IA'],
+  '50M+ MAU': ['50M+ MAU', '50M+ MAU'],
+  'Specification-Driven and BDD workflows, agent tool use, MCP servers and shared-context engineering.': ['Flujos de Desarrollo Guiado por Especificaciones y BDD, uso de herramientas por agentes, servidores MCP e ingeniería de contexto compartido.', 'Fluxos de Desenvolvimento Guiado por Especificações e BDD, uso de ferramentas por agentes, servidores MCP e engenharia de contexto compartilhado.'],
+  'TypeScript and modern JavaScript across web, mobile and Node.js backends.': ['TypeScript y JavaScript moderno en web, mobile y backends Node.js.', 'TypeScript e JavaScript moderno em web, mobile e backends Node.js.'],
+  'React and Next.js on the web, React Native on mobile, with a product and UX mindset.': ['React y Next.js en web, React Native en mobile, con mirada de producto y UX.', 'React e Next.js na web, React Native no mobile, com olhar de produto e UX.'],
+  'Decoupled login and identity frontends, orchestration between microfrontends and frontend re-architecture.': ['Frontends de login e identidad desacoplados, orquestación entre microfrontends y rearquitectura de frontends.', 'Frontends de login e identidade desacoplados, orquestração entre microfrontends e rearquitetura de frontends.'],
+  'Unit and end-to-end testing across web and mobile with modern tooling.': ['Testing unitario y end-to-end en web y mobile con tooling moderno.', 'Testes unitários e end-to-end em web e mobile com tooling moderno.'],
+  'Testing, CI/CD & Quality': ['Testing, CI/CD y calidad', 'Testes, CI/CD e qualidade'],
+  'Specs and typed contracts precede code': ['Las specs y los contratos tipados preceden al código', 'As specs e os contratos tipados precedem o código'],
+  'Deep focus on microfrontends, decoupled login and identity frontends, orchestration between them and frontend re-architecture.': ['Foco profundo en microfrontends, frontends de login e identidad desacoplados, orquestación entre ellos y rearquitectura de frontends.', 'Foco profundo em microfrontends, frontends de login e identidade desacoplados, orquestração entre eles e rearquitetura de frontends.'],
+  'Frontend Re-architecture': ['Rearquitectura de frontend', 'Rearquitetura de frontend'],
+  'Nicolás Costanza. All rights reserved.': ['Nicolás Costanza. Todos los derechos reservados.', 'Nicolás Costanza. Todos os direitos reservados.'],
+  'Recruiter inquiries': ['Consultas de recruiters', 'Consultas de recrutadores'],
+  'Available for senior engineering and AI architecture roles in distributed international teams.': ['Disponible para roles senior de ingeniería y arquitectura de IA en equipos internacionales distribuidos.', 'Disponível para posições sênior de engenharia e arquitetura de IA em equipes internacionais distribuídas.'],
+  'Applied AI: Agents & RAG': ['IA aplicada: agentes y RAG', 'IA aplicada: agentes e RAG'],
+  'Coursework centered on agent orchestration and RAG, applied to AI-assisted software engineering.': ['Cursada centrada en orquestación de agentes y RAG, aplicada a la ingeniería de software asistida por IA.', 'Curso centrado em orquestração de agentes e RAG, aplicado à engenharia de software assistida por IA.'],
 };
 
 function t(key) {
@@ -370,41 +541,41 @@ const data = {
       label: 'Mercado Libre',
       period: '2023 — Present',
       tone: 'cyan',
-      title: 'Mission-Critical Auth & Microfrontends',
-      body: "Overhauled Latin America's highest-volume fintech and e-commerce authentication ecosystem. Rolled out Google One Tap, biometric WebAuthn and decoupled microfrontend modules serving 50M+ active users.",
-      tags: ['TypeScript', 'Microfrontends', 'OAuth 2.0', 'Module Federation'],
+      title: 'Login & 2FA Microfrontends',
+      body: 'Building the identity frontend at Mercado Libre: factor selection, email / SMS / WhatsApp validation, identification and password steps orchestrated across decoupled microfrontends, plus an ongoing re-architecture.',
+      tags: ['TypeScript', 'Microfrontends', 'Login / 2FA', 'React'],
     },
     {
       label: 'AI Lab & Architecture',
       period: '2023 — Present',
       tone: 'green',
-      title: 'AI-Native Engineering & MCP Workflows',
-      body: 'Pioneered Specification-Driven Development and custom Model Context Protocol servers. Agent-assisted workflows with Claude Code and Codex condensed discovery and implementation cycles by 3.2x.',
-      tags: ['Claude Code', 'MCP Tools', 'Prompt Pipelines', 'Agent Orchestration'],
+      title: 'AI-Native Engineering: SDD & MCP',
+      body: 'Adopted Specification-Driven and BDD workflows with Claude, Codex and Cursor; built internal MCP servers, Skills and Plugins and agentified repositories with AGENTS.md.',
+      tags: ['SDD / BDD', 'MCP', 'Claude / Codex / Cursor', 'Skills & Plugins', 'AGENTS.md'],
     },
     {
-      label: 'Qira Fintech & Mobile',
-      period: 'Enterprise Systems',
+      label: 'Widergy',
+      period: 'Mar 2023 — Aug 2023',
       tone: 'indigo',
-      title: 'Scalable Fintech Wallets & Core Systems',
-      body: 'Built end-to-end payment platforms, virtual card onboarding and real-time ledger sync across web and mobile with strict type-safe schemas and multi-country compliance workflows.',
-      tags: ['React Native', 'Next.js', 'Node.js', 'Fintech Security'],
+      title: 'White-Label Utility Platforms',
+      body: 'Customizable web and React Native apps for water, light and gas utility companies: a virtual office for payments, service requests, complaints and consumption tracking, branded per client.',
+      tags: ['React', 'React Native', 'White-Label', 'Utilities'],
     },
   ],
   projects: [
-    { id: 'mcp', category: 'ai', label: 'AI-Native · MCP Protocol · Automation', impact: '3.2x faster delivery', title: 'Agentic Dev Framework & MCP Suite', body: 'Custom Model Context Protocol toolchain orchestrating Claude Code and Codex for AST refactoring, spec-based code generation and automated verification loops.', tags: ['TypeScript', 'MCP Protocol', 'Claude Code', 'Node.js', 'AST Parsers'], action: 'View Architecture Breakdown', link: 'GitHub / Docs', featured: true },
-    { id: 'auth', category: 'enterprise', label: 'Enterprise Scale · Zero-Downtime', impact: '99.99% Uptime', title: 'Microfrontend Auth Engine', body: 'Decoupled authentication architecture handling OAuth 2.0, WebAuthn biometric login and multi-tenant session handoffs across millions of concurrent users.', tags: ['React', 'Webpack 5 MF', 'TypeScript', 'OAuth 2.0 / OIDC'], action: 'Explore Architecture', link: 'GitHub', visual: 'auth' },
-    { id: 'sdd', category: 'ai', label: 'Compiler & Agent Pipeline', impact: '3-Agent Linting', title: 'SDD Compiler Engine', body: 'Deterministic workflow compiler turning structured Markdown specifications into verified TypeScript codebases with adversarial linting and invariant testing.', tags: ['TypeScript', 'Next.js', 'Zod Schemas', 'Vitest'], action: 'Explore Specification', link: 'GitHub', visual: 'workflow' },
-    { id: 'qira', category: 'fintech', label: 'Fintech & Ledger', impact: 'ACID Guaranteed', title: 'Qira Pagos — Core Wallet', body: 'End-to-end digital wallet with virtual card onboarding, immutable double-entry ledgers, banking integrations and multi-currency exchange pipelines.', tags: ['React Native', 'Node.js', 'PostgreSQL', 'Redis'], action: 'System Topology', link: 'GitHub', visual: 'ledger' },
-    { id: 'mobile', category: 'fintech', label: 'Mobile Architecture', impact: '42+ Distributed Tenants', title: 'White-Label Smart Metering', body: 'Scalable React Native architecture for utility smart-metering companies across Latin America with compile-time branding tokens and dynamic IoT feeds.', tags: ['React Native', 'Redux Toolkit', 'Fastlane CI', 'WatermelonDB'], action: 'View Case Study', link: 'GitHub', visual: 'mobile' },
+    { id: 'mcp', category: 'ai', label: 'Internal AI Tooling', impact: 'Agents in the loop', title: 'AI-Native Dev System: MCP, Skills & Plugins', body: 'Internal tooling for agentic engineering: MCP servers, reusable Skills and Plugins, plus AGENTS.md conventions that let Claude, Codex and Cursor work inside our repositories.', tags: ['TypeScript', 'MCP', 'Claude Code', 'Codex', 'Cursor'], action: 'View Architecture Breakdown', link: 'GitHub / Docs', featured: true },
+    { id: 'sdd', category: 'ai', label: 'Spec & Agent Workflow', impact: 'Spec-first', title: 'Specification-Driven Development Workflow', body: 'SDD and BDD workflow where structured specs are the source of truth and agents generate and verify code, with shared architecture docs as context.', tags: ['SDD / BDD', 'AGENTS.md', 'Claude Code', 'MCP'], action: 'Explore Specification', link: 'GitHub', visual: 'workflow' },
+    { id: 'auth', category: 'enterprise', label: 'Enterprise · Identity', impact: '50M+ MAU', title: 'Login & 2FA Microfrontends', body: 'Identity frontend at Mercado Libre: factor selection, email / SMS / WhatsApp validation, identification and password steps orchestrated across decoupled microfrontends.', tags: ['React', 'TypeScript', 'Microfrontends', 'Login / 2FA'], action: 'Explore Architecture', link: 'GitHub', visual: 'auth' },
+    { id: 'qira', category: 'fintech', label: 'Fintech · Mobile', impact: 'Integrated payments', title: 'Qira Pagos — Payment Wallet', body: 'React Native wallet integrated with the Qira Global agri e-commerce so customers could pay from the app.', tags: ['React Native', 'Node.js', 'Express', 'MongoDB'], action: 'System Topology', link: 'GitHub', visual: 'ledger' },
+    { id: 'mobile', category: 'fintech', label: 'White-Label Mobile', impact: 'Multi-client', title: 'White-Label Utility Apps', body: 'Customizable React and React Native applications for water, light and gas utilities: payments, service requests, complaints and consumption tracking, branded per client.', tags: ['React', 'React Native', 'White-Label', 'TypeScript'], action: 'View Case Study', link: 'GitHub', visual: 'mobile' },
   ],
   skills: [
-    { index: '01 // AI-NATIVE', title: 'AI-Native & Agentic Systems', body: 'Model orchestration, agent tool use, context boundary control and prompt-driven verification workflows.', tags: 'ai claude code codex mcp model context protocol sdd agentic', chips: ['MCP Protocol', 'Claude Code', 'OpenAI Codex', 'Spec-Driven Dev', 'Agent Scaffolding'], tone: 'cyan', context: 'Built custom MCP servers for code refactoring and automated verification; reduced manual development cycles by 3x.' },
-    { index: '02 // RUNTIMES', title: 'Languages & Core Runtimes', body: 'Type-safe runtime architecture, high-concurrency event loops, asynchronous backends and deterministic computation.', tags: 'typescript javascript node python go sql runtimes', chips: ['TypeScript 5.x', 'JavaScript ESNext', 'Node.js', 'Python', 'Go', 'SQL / PostgreSQL'], context: '100% strict TypeScript typing enforced across monorepos and backend boundaries.' },
-    { index: '03 // CLIENT CORE', title: 'Frontend & Mobile Systems', body: 'Component graph composition, atomic state stores, cross-platform mobile architecture and modern rendering patterns.', tags: 'react nextjs react native redux toolkit frontend mobile', chips: ['React 18 / 19', 'Next.js App Router', 'React Native', 'Tailwind CSS', 'Redux Toolkit'], context: 'Engineered accessible, high-performance UI systems and multi-tenant cross-platform deployments.' },
-    { index: '04 // DISTRIBUTED', title: 'Distributed Systems & MFEs', body: 'Decoupled domain architectures, independent runtime module delivery, API gatekeeping and migration orchestration.', tags: 'microfrontends module federation turborepo system design architecture distributed', chips: ['Module Federation', 'Turborepo', 'Strangler Pattern', 'GraphQL / REST', 'Canary Deployments'], context: 'Architected zero-dependency microfrontend modules serving 50M+ MAU and enabling autonomous squad releases.' },
-    { index: '05 // SECURITY', title: 'Security, Auth & Persistence', body: 'Biometrics, cryptographic token exchange, distributed session caching and strict data layer modeling.', tags: 'security auth oauth oidc webauthn jwt postgresql prisma redis databases', chips: ['OAuth 2.0 / OIDC', 'WebAuthn / Passkeys', 'JWT / JWKS', 'PostgreSQL', 'Redis', 'Zod'], context: 'Designed high-throughput identity recovery conduits with deterministic schema guardrails.' },
-    { index: '06 // RELIABILITY', title: 'Testing, CI/CD & Observability', body: 'Continuous integration pipelines, automated visual regression gates and real-time distributed tracing.', tags: 'testing jest vitest cypress playwright chromatic github actions datadog sentry opentelemetry', chips: ['Jest / Vitest', 'Cypress / Playwright', 'Chromatic', 'GitHub Actions', 'Datadog APM'], context: 'Automated quality enforcement stops breaking visual and logic regressions before merge.' },
+    { index: '01 // AI-NATIVE', title: 'AI-Native & Agentic Systems', body: 'Specification-Driven and BDD workflows, agent tool use, MCP servers and shared-context engineering.', tags: 'ai claude code codex cursor mcp model context protocol sdd bdd agents md agentic skills plugins', chips: ['MCP', 'Claude Code', 'Codex', 'Cursor', 'SDD / BDD', 'AGENTS.md'], tone: 'cyan', context: 'Built MCP servers, Skills and Plugins and agentified repositories with AGENTS.md conventions.' },
+    { index: '02 // RUNTIMES', title: 'Languages & Core Runtimes', body: 'TypeScript and modern JavaScript across web, mobile and Node.js backends.', tags: 'typescript javascript node express mongodb runtimes', chips: ['TypeScript', 'JavaScript', 'Node.js', 'Express', 'MongoDB'], context: 'TypeScript across web, mobile and Node.js; Node.js and Express on the backend.' },
+    { index: '03 // CLIENT CORE', title: 'Frontend & Mobile Systems', body: 'React and Next.js on the web, React Native on mobile, with a product and UX mindset.', tags: 'react nextjs react native frontend mobile ux product design', chips: ['React', 'Next.js', 'React Native', 'Product / UX'], context: 'React and Next.js on the web, React Native on mobile, with a product / UX mindset.' },
+    { index: '04 // DISTRIBUTED', title: 'Distributed Systems & MFEs', body: 'Decoupled login and identity frontends, orchestration between microfrontends and frontend re-architecture.', tags: 'microfrontends modular architecture frontend rearchitecture login orchestration integration', chips: ['Microfrontends', 'Login Orchestration', 'API Integration', 'Architecture'], context: 'Login and identity microfrontends with orchestration between them; leading frontend re-architecture.' },
+    { index: '05 // SECURITY', title: 'Security, Auth & Persistence', body: 'Authentication and authorization foundations, policy configuration, rate limiting and scope segmentation.', tags: 'security auth authn authz oauth oidc policies rate limit scopes jwt', chips: ['AuthN / AuthZ', 'Auth Policies', 'Rate Limiting', 'Scopes', 'JWT'], context: 'Authentication and authorization foundations, policy configuration, rate limiting and scope segmentation.' },
+    { index: '06 // QUALITY', title: 'Testing, CI/CD & Quality', body: 'Unit and end-to-end testing across web and mobile with modern tooling.', tags: 'testing jest react testing library cypress webdriverio wdio playwright unit e2e cicd quality', chips: ['Jest', 'React Testing Library', 'Cypress', 'WebdriverIO', 'Playwright'], context: 'Unit and E2E testing with Jest, React Testing Library, Cypress, WDIO and Playwright.' },
   ],
 };
 
@@ -417,17 +588,17 @@ const layout = (view, content) => `<div class="view view-${view}">${content}</di
 function overview() {
   const featured = data.featured.map((item) => `<article class="record-card card-lift reveal"><div class="record-meta"><span class="record-label ${item.tone}">${t(item.label)}</span><span class="mono-label">${t(item.period)}</span></div><h3>${t(item.title)}</h3><p>${t(item.body)}</p><div class="card-tags">${translatedTags(item.tags)}</div></article>`).join('');
   const stack = [
-    ['⌘', 'Languages & Core Tech', 'Deep expertise in modern JavaScript and TypeScript runtimes with high-performance backend tools.', ['TypeScript 5.x', 'Next.js / React', 'Node.js', 'Go (Golang)', 'GraphQL & REST'], 'cyan'],
-    ['⌘', 'Architecture & Scale', 'Resilient distributed frontends and authentication security models designed for autonomous teams.', ['Microfrontends', 'Module Federation', 'OAuth2 & WebAuthn', 'Turborepo', 'CI/CD Canary'], 'indigo'],
-    ['✦', 'AI-Native & Agentic', 'Agentic workflows that elevate software engineering throughput, precision and verifiability.', ['Claude Code', 'Model Context Protocol', 'Spec-Driven Dev', 'Codex & Cursor', 'Autonomous Scaffolding'], 'green'],
+    ['⌘', 'Languages & Core Tech', 'Modern JavaScript and TypeScript across web, mobile and Node.js backends, plus Python.', ['TypeScript', 'JavaScript', 'React', 'Next.js', 'Node.js', 'React Native', 'Python'], 'cyan'],
+    ['⌘', 'Frontend Architecture & Scale', 'Login and identity frontends split into decoupled microfrontends, with a re-architecture in progress.', ['Microfrontends', 'Login / 2FA', 'AuthN / AuthZ', 'Next.js'], 'indigo'],
+    ['✦', 'AI-Native & Agentic', 'Agentic workflows that raise engineering throughput, precision and verifiability.', ['SDD / BDD', 'MCP', 'Claude / Codex / Cursor', 'Skills & Plugins', 'AGENTS.md'], 'green'],
   ].map(([symbol, title, body, chips, tone]) => `<article class="card card-lift reveal">${icon(symbol, tone)}<h3>${t(title)}</h3><p>${t(body)}</p><div class="card-tags">${translatedTags(chips)}</div></article>`).join('');
   return layout('overview', `
     <section class="shell overview-hero">
-      <div class="availability"><span class="status-dot pulse"></span> ${t('Open to Staff IC & AI Architect Roles · Remote / Hybrid')}</div>
+      <div class="availability"><span class="status-dot pulse"></span> ${t('Open to Senior & AI Architect Roles · Remote / Hybrid')}</div>
       <h1>${t('Senior Software Engineer &')} <span class="gradient-text">${t('AI Architect')}</span></h1>
       <p class="lead">${th('overview.lead')}</p>
       <div class="hero-actions"><a class="button button-light" href="assets/nicolas-costanza.pdf" download><span>↓</span> ${t('Download Resume')}</a><a class="button button-outline" href="#contact">✉ ${t('Get in Touch')}</a><a class="button button-ghost" href="#experience">${t('View Full Experience')} <span>→</span></a><button class="button button-ghost" type="button" data-copy-email>⧉ ${t('Copy Email')}</button></div>
-      <div class="hero-stats"><div><strong>7+ Yrs</strong><span>${t('Engineering Experience')}</span></div><div><strong class="cyan">50M+</strong><span>${t('Users in Production')}</span></div><div><strong>Mercado Libre</strong><span>${t('Auth & Core Frontend')}</span></div><div><strong class="green">AI-Native</strong><span>${t('MCP & Agentic SDD')}</span></div></div>
+      <div class="hero-stats"><div><strong>7 Yrs</strong><span>${t('Engineering Experience')}</span></div><div><strong class="cyan">50M+</strong><span>${t('Users in Production')}</span></div><div><strong>Mercado Libre</strong><span>${t('Login & 2FA Frontend')}</span></div><div><strong class="green">AI-Native</strong><span>${t('SDD · MCP · Agents')}</span></div></div>
     </section>
     <section class="shell section section-rule">
       <div class="section-heading"><div><div class="eyebrow">${t('Track Record & Impact')}</div><h2>${t('Featured Engineering Leadership')}</h2></div><a class="text-link" href="#experience">${t('Explore experience details')} →</a></div>
@@ -437,7 +608,7 @@ function overview() {
       <div class="section-heading"><div><div class="eyebrow quiet">${t('ATS & Technical Competencies')}</div><h2>${t('Technical Stack & Specialization')}</h2></div></div>
       <div class="card-grid three-col">${stack}</div>
     </section>
-    <section class="shell section"><div class="cta"><div><div class="eyebrow">${t('Recruiter & architectural inquiries')}</div><h3>${t('Hiring for a Senior IC or AI Architect role?')}</h3><p>${t('Open to leadership conversations, staff engineering challenges and building next-generation web and AI systems.')}</p></div><div class="cta-actions"><a class="button button-light" href="assets/nicolas-costanza.pdf" download>↓ ${t('Download CV')}</a><a class="button button-outline" href="#contact">◷ ${t('Schedule Interview')}</a></div></div></section>
+    <section class="shell section"><div class="cta"><div><div class="eyebrow">${t('Recruiter & architectural inquiries')}</div><h3>${t('Hiring a Senior Engineer or AI Architect?')}</h3><p>${t('Open to leadership conversations, senior engineering challenges and building next-generation web and AI systems.')}</p></div><div class="cta-actions"><a class="button button-light" href="assets/nicolas-costanza.pdf" download>↓ ${t('Download CV')}</a><a class="button button-outline" href="#contact">◷ ${t('Schedule Interview')}</a></div></div></section>
   `);
 }
 
@@ -450,9 +621,9 @@ function metricGrid(items) {
 }
 
 const experiences = [
-  { id: 'role-meli', company: 'Mercado Libre', role: 'Senior Software Engineer', period: 'Aug 2023 – Present', domain: 'https://www.mercadolibre.com/jms/mla/lgz/login', current: true, summaryKey: 'experience.meli.summary', impacts: [['↗', 'Auth Ecosystem & Microfrontends', 'Architected decoupled login and account recovery micro-apps via Module Federation, reducing deployment blast radius across distributed squads.'], ['⌁', 'Google Sign-In & Canary Rollouts', 'Engineered OAuth2 Google Identity federation with graduated canary deployments and Datadog monitors that halt delivery on latency anomalies.'], ['✓', 'TypeScript Migration (-42% Runtime Exceptions)', 'Standardized strict end-to-end schemas across legacy JavaScript repositories, decreasing production runtime crashes and auth payload regressions.'], ['✦', 'AI-Native Engineering (3x Delivery Acceleration)', 'Pioneered Specification-Driven Development backed by internal MCP servers with Claude Code to streamline generation, fixtures and architecture RFCs.']], technologies: ['TypeScript', 'Next.js', 'Microfrontends', 'Module Federation', 'OAuth2 / OIDC', 'Jest', 'Datadog', 'Claude MCP'] },
-  { id: 'role-widergy', company: 'Widergy', role: 'Frontend Mobile Engineer', period: 'Mar 2023 – Aug 2023', domain: 'Smart Energy & Utilities', summary: 'Spearheaded modular white-label mobile applications for utility and smart metering providers across Latin America, focusing on multi-client deployment and real-time consumption telemetry.', impacts: [['▧', 'High-Reusability White-Label React Native Architecture', 'Constructed a multi-tenant client foundation for dynamic branding swaps, configurable payment gateways and tenant-specific billing modules.'], ['↻', 'Offline-First Synchronization Engine', 'Implemented optimistic state caching with Redux Toolkit and SQLite persistence for responsive meter readings under intermittent network conditions.']], technologies: ['React Native', 'TypeScript', 'Redux Toolkit', 'Fastlane', 'Native Modules', 'REST APIs'] },
-  { id: 'role-radium', company: 'Radium Rocket', role: 'Full Stack Software Engineer', period: 'Sep 2019 – Mar 2023', domain: 'Fintech & Enterprise', summary: 'Engineered high-volume enterprise products end-to-end as core developer for Qira Global, an agri-commerce platform, and Qira Pagos, a fintech digital wallet.', impacts: [['▣', 'Fintech Digital Wallet (Qira Pagos)', 'Built real-time transaction processing, CVU payment gateways and banking webhook ingress with strict idempotency keys and zero ledger reconciliation discrepancies.'], ['▦', 'Scalable B2B Backoffice & Document Pipeline', 'Developed RBAC backoffices, multi-currency catalog filtering and pre-signed S3 streaming for legal agricultural grain contracts.'], ['⌁', 'Performance, Observability & JWT Security', 'Decreased MTTD by 60% with automated Sentry releases and source maps while deploying cryptographic JWT refresh rotation across Node microservices.']], technologies: ['React', 'React Native', 'Node.js', 'Express', 'MongoDB', 'AWS S3', 'Fintech Security'] },
+  { id: 'role-meli', company: 'Mercado Libre', role: 'Senior Software Engineer', period: 'Aug 2023 – Present', domain: 'https://www.mercadolibre.com/jms/mla/lgz/login', current: true, summaryKey: 'experience.meli.summary', impacts: [['↗', 'Login & 2FA Microfrontends', 'Build and maintain the login factor flows: factor selection, email and phone (SMS / WhatsApp) validation, identification and password steps, orchestrated across decoupled microfrontends.'], ['⌁', 'Frontend Re-Architecture', 'Leading the re-architecture of the login frontends to reduce coupling and let squads ship changes independently.'], ['✦', 'AI-Native Engineering: SDD & MCP', 'Drove Specification-Driven and BDD workflows with Claude, Codex and Cursor; built MCP servers, Skills and Plugins and agentified repositories with AGENTS.md.'], ['✓', 'Shared Architecture Documentation', 'Contributed to a shared documentation system that gives AI the big picture of how microservices and microfrontends interconnect.']], technologies: ['TypeScript', 'React', 'Microfrontends', 'Login / 2FA', 'SDD / BDD', 'Claude Code', 'Codex', 'Cursor', 'MCP'] },
+  { id: 'role-widergy', company: 'Widergy', role: 'Frontend & Mobile Engineer', period: 'Mar 2023 – Aug 2023', domain: 'Utilities (Water, Light & Gas)', summary: 'Built white-label web and mobile products for water, light and gas utility companies, with customizable apps per client.', impacts: [['▧', 'White-Label Architecture', 'Built customizable applications where branding, services and flows are configured per utility company from a shared codebase.'], ['↻', 'Virtual Office (Web & Mobile)', 'Delivered payment, service-request, complaint and consumption-tracking flows in both React (web) and React Native (mobile).']], technologies: ['React', 'React Native', 'TypeScript', 'White-Label', 'REST APIs'] },
+  { id: 'role-radium', company: 'Radium Rocket', role: 'Full Stack Software Engineer', period: 'Sep 2019 – Mar 2023', domain: 'Agri-tech & E-commerce', summary: 'Built Qira Global, an agri-tech e-commerce, and Qira Pagos, its payment wallet. Full-stack work with Node.js, Express, React and MongoDB, then React Native.', impacts: [['▣', 'Qira Global Backoffice (RBAC)', 'Developed a large backoffice with multiple roles — admin, distributor, producer, customer and vendor — over an agri-commerce catalog.'], ['▦', 'Full-Stack E-Commerce', 'Shipped features end-to-end with Node.js, Express, React and MongoDB across the platform.'], ['⌁', 'Qira Pagos Wallet', 'Built a React Native wallet integrated with the e-commerce so customers could pay from the app.']], technologies: ['Node.js', 'Express', 'React', 'React Native', 'MongoDB', 'TypeScript'] },
 ];
 
 function experienceCard(item) {
@@ -462,34 +633,29 @@ function experienceCard(item) {
 }
 
 function experience() {
-  return layout('experience', `${pageHeader(t('Career Timeline & Track Record'), t('Engineering Experience'), t('7+ years architecting scalable web ecosystems, mission-critical authentication at Mercado Libre and AI-native delivery workflows across Latin America and global markets.'))}
-    <section class="shell">${metricGrid([['Experience', '7+', 'Years · Full-stack & systems'], ['Scale', '50M+', 'MAU · Users served at MELI', 'cyan'], ['Domain', 'Tier-1', 'Auth · Zero-trust ecosystem'], ['Mobility', 'Remote', 'US/EU overlap & hybrid']])}<div class="experience-toolbar"><div class="filter-list"><button class="filter-button active" data-experience-filter="all">${t('All Experiences')}</button><button class="filter-button" data-experience-filter="meli">Mercado Libre</button><button class="filter-button" data-experience-filter="widergy">Widergy</button><button class="filter-button" data-experience-filter="radium">Radium Rocket</button></div><a class="button button-ghost button-small" href="assets/nicolas-costanza.pdf" download>↓ ${t('Download PDF CV')}</a></div></section>
+  return layout('experience', `${pageHeader(t('Career Timeline & Track Record'), t('Engineering Experience'), t('7 years building high-scale web products at Mercado Libre, Widergy and Radium Rocket — identity and login frontends, frontend re-architecture and AI-native engineering with SDD, MCP and agents.'))}
+    <section class="shell">${metricGrid([['Experience', '7', 'Years · Full-stack & frontend'], ['Scale', '50M+', 'MAU at Mercado Libre', 'cyan'], ['Domain', 'Login & 2FA', 'Identity frontend'], ['Focus', 'AI-Native', 'SDD · MCP · Agents']])}<div class="experience-toolbar"><div class="filter-list"><button class="filter-button active" data-experience-filter="all">${t('All Experiences')}</button><button class="filter-button" data-experience-filter="meli">Mercado Libre</button><button class="filter-button" data-experience-filter="widergy">Widergy</button><button class="filter-button" data-experience-filter="radium">Radium Rocket</button></div><a class="button button-ghost button-small" href="assets/nicolas-costanza.pdf" download>↓ ${t('Download PDF CV')}</a></div></section>
     <section class="shell experience-list">${experiences.map(experienceCard).join('')}</section>
-    <section class="shell section"><div class="cta"><div><div class="eyebrow">${t('Immediate impact opportunity')}</div><h3>${t('Looking for a Senior IC or Tech Lead?')}</h3><p>${t('Available for senior engineering, staff frontend and AI architecture roles in distributed international teams.')}</p></div><div class="cta-actions"><a class="button button-light" href="assets/nicolas-costanza.pdf" download>↓ ${t('Download Full CV (PDF)')}</a><a class="button button-outline" href="#contact">◷ ${t('Schedule Intro Call')}</a></div></div></section>`);
+    <section class="shell section"><div class="cta"><div><div class="eyebrow">${t('Immediate impact opportunity')}</div><h3>${t('Looking for a Senior Engineer or Tech Lead?')}</h3><p>${t('Available for senior engineering, frontend and AI architecture roles in distributed international teams.')}</p></div><div class="cta-actions"><a class="button button-light" href="assets/nicolas-costanza.pdf" download>↓ ${t('Download Full CV (PDF)')}</a><a class="button button-outline" href="#contact">◷ ${t('Schedule Intro Call')}</a></div></div></section>`);
 }
 
 function projectVisual(project) {
-  if (project.featured) return `<div class="project-bento"><div><span class="mono-label">${t('The Engineering Bottleneck')}</span><p>${t('Teams lose high-context capacity on repetitive scaffolding, manual review cycles and syntax alignment across multi-repo dependencies.')}</p></div><div><span class="mono-label cyan">${t('The Deterministic Engine')}</span><p>${t('Dual-tier protocol converts technical design schemas into AST nodes with sandboxed test runners and verifiable output.')}</p></div></div>`;
+  if (project.featured) return `<div class="project-bento"><div><span class="mono-label">${t('Context, not code')}</span><p>${t('AI lacks the big picture of how microservices and microfrontends interconnect, so teams re-explain architecture on every task.')}</p></div><div><span class="mono-label cyan">${t('The Shared Context Layer')}</span><p>${t('Specs, AGENTS.md and shared architecture docs give agents durable, verifiable context before they write code.')}</p></div></div>`;
   if (project.visual === 'workflow') return `<div class="project-visual"><span>${t('PIPELINE VERIFICATION STAGES')}</span><div class="workflow"><b>● ${t('Spec Parser')}</b><i>→</i><b>● ${t('Agent Synthesizer')}</b><i>→</i><b class="green">● ${t('CI Sandbox')}</b></div></div>`;
-  const visual = { auth: ['FEDERATION: MODULE FEDERATION 2.0', '< 18ms Handshake', 'OIDC + PKCE + WebAuthn FIDO2'], ledger: ['TX INTEGRITY: ACID COMPLIANT', 'ZERO RECON DELAY', 'Sub-second settlement & webhook routing'], mobile: ['DEPLOYMENT: FASTLANE MATRIX', '42+ Client Builds', 'WatermelonDB Offline-First Architecture'] }[project.visual];
+  const visual = { auth: ['IDENTITY: LOGIN & 2FA', 'Microfrontends', 'Factor selection, validation & orchestration'], ledger: ['PAYMENTS: QIRA PAGOS', 'Wallet + store', 'Payments integrated with the e-commerce'], mobile: ['WHITE-LABEL: REACT NATIVE', 'Multi-client apps', 'Payments, service requests & consumption'] }[project.visual];
   return visual ? `<div class="project-visual"><div><span>${visual[0]}</span><strong>${visual[1]}</strong></div><p>▣ &nbsp; ${visual[2]}</p></div>` : '';
 }
 
 function projectCard(project) {
-  return `<article class="project-card ${project.featured ? 'featured' : ''} reveal" data-category="${project.category}" data-project="${project.id}"><div class="project-top"><span class="project-badge ${project.category === 'ai' ? 'cyan' : project.category === 'fintech' ? 'green' : ''}"><span class="status-dot"></span>${t(project.label)}</span><span class="project-impact">${t(project.impact)}</span></div><h2>${t(project.title)}</h2><p class="project-description">${t(project.body)}</p>${projectVisual(project)}<div class="card-tags">${translatedTags(project.tags)}</div><div class="project-footer"><button class="button ${project.featured ? 'button-light' : 'button-outline'} button-small" type="button" data-open-modal="${project.id}">${t(project.action)} →</button><a class="text-link" href="https://github.com/nicolascostanza" target="_blank" rel="noreferrer">${project.link} ↗</a></div></article>`;
+  return `<article class="project-card ${project.featured ? 'featured' : ''} reveal" data-category="${project.category}" data-project="${project.id}"><div class="project-top"><span class="project-badge ${project.category === 'ai' ? 'cyan' : project.category === 'fintech' ? 'green' : ''}"><span class="status-dot"></span>${t(project.label)}</span><span class="project-impact">${t(project.impact)}</span></div><h2>${t(project.title)}</h2><p class="project-description">${t(project.body)}</p>${projectVisual(project)}<div class="card-tags">${translatedTags(project.tags)}</div></article>`;
 }
 
 function aiLab() {
-  return layout('ai', `${pageHeader(`${t('Portfolio & System Builds')} / NICOLAS_COSTANZA_AI_LAB_V4.2`, t('Featured Projects & AI Lab'), t('Curated selection of production-grade architectures, autonomous agent workflows and mission-critical applications engineered for deterministic resilience.'), `<div class="telemetry-panel"><div><strong>99.994%</strong><span>${t('Runtime Uptime')}</span></div><div><strong>14 Active</strong><span>${t('Production Specs')}</span></div><div><strong>L6 / Principal AI-SE</strong><span>${t('Engine Profile')}</span></div></div>`)}
+  return layout('ai', `${pageHeader(`${t('Portfolio & System Builds')} / NICOLAS_COSTANZA_AI_LAB_V4.2`, t('Featured Projects & AI Lab'), t('Curated selection of real production work across identity frontends, agentic AI tooling, fintech and white-label mobile.'), `<div class="telemetry-panel"><div><strong>7</strong><span>${t('Years Experience')}</span></div><div><strong>3</strong><span>${t('Companies')}</span></div><div><strong>Senior / AI-Native</strong><span>${t('Engineering Profile')}</span></div></div>`)}
     <section class="shell"><div class="filters"><div class="filter-list"><button class="filter-button active" data-filter="all">${t('All Projects')} (${data.projects.length})</button><button class="filter-button" data-filter="ai">${t('AI-Native & MCP')}</button><button class="filter-button" data-filter="enterprise">${t('Enterprise Microfrontends')}</button><button class="filter-button" data-filter="fintech">${t('Fintech & Mobile')}</button></div><span class="query-status">◉ QUERY_ACTIVE: ALL_SYSTEMS_OPERATIONAL</span></div><div class="project-grid" id="project-grid">${data.projects.map(projectCard).join('')}</div>
-      <div class="verification-panel"><div class="panel-heading"><div><h3>${t('System Verification & Engineering Standards')}</h3><p>${t('Strict quality assurance benchmarks applied across production systems and autonomous AI pipelines.')}</p></div><span class="mono-label green">COMPLIANCE: L6 PROTOCOL</span></div><div class="verification-grid"><div><span>${t('TYPE SAFETY')}</span><strong>${t('100% Strict')}</strong><p>${t('Zero unsafe escapes in production codebases.')}</p></div><div><span>${t('E2E DETERMINISM')}</span><strong class="cyan">${t('<0.01% Drift')}</strong><p>${t('Autonomous regression tests on each AST emit.')}</p></div><div><span>${t('SECURITY AUDIT')}</span><strong>OWASP Top 10</strong><p>${t('Automated SAST and secret scanning on CI push.')}</p></div><div><span>${t('LATENCY P99')}</span><strong class="green">&lt;45ms</strong><p>${t('Federated edge distribution nodes.')}</p></div></div></div>
-      ${sandboxMarkup()}
-      <div class="cta"><div><div class="eyebrow">${t('Recruiter & architectural inquiries')}</div><h3>${t('Want to review architectural designs or code samples?')}</h3><p>${t('Available for senior architectural consultations, lead staff engineer discussions and autonomous AI system design reviews.')}</p></div><div class="cta-actions"><a class="button button-light" href="#contact">✉ ${t('Get in Touch')}</a><a class="button button-outline" href="assets/nicolas-costanza.pdf" download>↓ ${t('Download Resume')}</a></div></div>
+      <div class="verification-panel"><div class="panel-heading"><div><h3>${t('System Verification & Engineering Standards')}</h3><p>${t('Strict quality assurance benchmarks applied across production systems and autonomous AI pipelines.')}</p></div><span class="mono-label green">PRODUCTION-VERIFIED</span></div><div class="verification-grid"><div><span>${t('TYPE SAFETY')}</span><strong>${t('TypeScript')}</strong><p>${t('Typed web, mobile and backend codebases.')}</p></div><div><span>${t('TESTING')}</span><strong class="cyan">${t('Unit & E2E')}</strong><p>${t('Jest, React Testing Library, Cypress, WDIO and Playwright.')}</p></div><div><span>${t('AI WORKFLOW')}</span><strong>${t('SDD & MCP')}</strong><p>${t('Spec-driven development with agents.')}</p></div><div><span>${t('MICROFRONTENDS')}</span><strong class="green">${t('Login & 2FA')}</strong><p>${t('Identity frontends shared across business units.')}</p></div></div></div>
+      <div class="cta"><div><div class="eyebrow">${t('Recruiter inquiries')}</div><h3>${t('Hiring a Senior Engineer or AI Architect?')}</h3><p>${t('Available for senior engineering and AI architecture roles in distributed international teams.')}</p></div><div class="cta-actions"><a class="button button-light" href="#contact">✉ ${t('Get in Touch')}</a><a class="button button-outline" href="assets/nicolas-costanza.pdf" download>↓ ${t('Download Resume')}</a></div></div>
     </section>`);
-}
-
-function sandboxMarkup() {
-  return `<div class="sandbox"><div class="sandbox-header"><div><div class="sandbox-title"><span class="status-dot"></span> ${t('AI Interactive Sandbox Terminal')}</div><p>${t("Live simulation of Nicolás's MCP agent executing task-spec parsing and validation loops.")}</p></div><div class="sandbox-controls"><button class="button button-cyan button-small" id="run-agent" type="button">▶ ${t('Execute Agent Loop')}</button><button class="button button-outline button-small" id="clear-agent" type="button">${t('Clear')}</button></div></div><div class="sandbox-grid"><div class="directive"><span class="mono-label cyan">${t('// Target SDD Spec')}</span><p>${t('Construct an idempotent payment middleware with Redis TTL lock and Prometheus telemetry export.')}</p><div class="directive-meta">MCP Server: <b>Claude Code Runtime</b><br>${t('Guardrail')}: <b>${t('Human approval before write')}</b></div></div><div class="sandbox-terminal"><div class="sandbox-terminal-head"><strong>agent://verification-loop</strong><span id="terminal-status">READY</span></div><div class="terminal-output" id="terminal-output"><div>${t('> Ready for instructions. Click "Execute Agent Loop" above.')}</div></div><div class="sandbox-footer"><span>model: claude-code</span><span>transport: stdio</span></div></div></div></div>`;
 }
 
 function skillCard(skill) {
@@ -498,35 +664,22 @@ function skillCard(skill) {
 
 function stack() {
   return layout('stack', `${pageHeader(`${t('Technical Capabilities & Proficiency')} // v2025.2 Spec Sheet`, t('Technical Stack & Architecture'), t('A transparent breakdown of competencies, engineering standards and production-proven technologies built for enterprise reliability and AI-native velocity.'), `<div class="view-toggle"><button class="active" type="button" data-view="matrix">▦ ${t('Skill Matrix')}</button><button type="button" data-view="blueprints">⌁ ${t('Architectures')}</button></div>`)}
-    <section class="shell"><div class="quick-badges"><span>✓ <b>${t('7+ Years')}</b> ${t('Production Experience')}</span><span>▣ <b>TypeScript &amp; React</b> ${t('Full-Lifecycle Expert')}</span><span>◈ <b>50M+ MAU</b> ${t('Enterprise Systems')}</span><span>✦ <b>AI-Native</b> ${t('MCP & SDD')}</span></div><div class="skills-head"><div><div class="eyebrow">${t('Unified Competence Map')}</div><h2>${t('Production-tested domains')}</h2><p>${t('Search across runtime, architecture, AI and reliability capabilities.')}</p></div><input class="search-input" id="skill-search" type="search" placeholder="${t('Search skills')}" aria-label="${t('Search skills')}"></div><div class="skills-grid" id="skills-grid">${data.skills.map(skillCard).join('')}</div>
-      <div class="standards-panel"><div><div class="eyebrow">${t('Production Standards')}</div><h3>${t('Operational Benchmarks')}</h3></div><span class="mono-label">${t('Metrics validated under heavy multi-region traffic loads')}</span><div class="summary-stats"><div><span>${t('TYPE STRICTNESS')}</span><strong>100%</strong><small>${t('Zero unsafe assertions')}</small></div><div><span>${t('MAX USER SCALE')}</span><strong>50M+</strong><small>${t('MAU sustained reliability')}</small></div><div><span>${t('DEV CYCLE REDUCTION')}</span><strong class="cyan">3.2x</strong><small>${t('Via custom MCP & SDD tooling')}</small></div><div><span>${t('DEPLOYMENT CADENCE')}</span><strong>Daily</strong><small>${t('Zero-downtime canary waves')}</small></div></div></div>
-      <div class="principles"><div class="eyebrow">${t('Design Ideology')}</div><h2>${t('Architecture Guiding Principles')}</h2><p class="body-copy">${t('Three strict doctrines applied whenever architecting platforms, scaling engineering groups or leading technical redesigns.')}</p><div class="principles-grid"><article class="principle">${icon('01', 'cyan')}<h3>${t('Specification-Driven Development')}</h3><p>${t('Strict schemas, API contracts and invariant models precede syntax so agents and engineers generate coherent, self-validating modules.')}</p><span>${t('Strict runtime typing with Zod + TypeScript')}</span></article><article class="principle">${icon('02')}<h3>${t('Autonomous Domain Boundaries')}</h3><p>${t('Systems are compartmentalized into distinct, decoupled domains. Squads deploy independently without blocking global dependencies.')}</p><span>${t('Module federation with hermetic dependencies')}</span></article><article class="principle">${icon('03', 'green')}<h3>${t('Progressive Decoupling & Risk Mitigation')}</h3><p>${t('Legacy code is replaced safely behind feature flags with automated canary evaluations and fast rollback triggers.')}</p><span>${t('Canary analysis with telemetry health-checks')}</span></article></div></div>
-      <div class="blueprint"><div class="blueprint-header"><span>● architecture-verify.config.ts</span><span class="green">● Ready</span></div><pre><span class="quiet">${t('// Nicolás Costanza — High-Assurance Architectural Guardrails')}</span>
-<span class="syntax">export const</span> <span class="value">SystemStandard</span> = {
-  aiOrchestration: {
-    specVerification: <span class="value">"model-context-protocol"</span>,
-    latencyBudgetMs: <span class="value">450</span>,
-    autonomousToolExecution: <span class="syntax">true</span>,
-    humanInTheLoopEscalation: <span class="syntax">true</span>,
-  },
-  distributedFrontend: { federationIsolation: <span class="value">"zero-leakage-runtime"</span> },
-  securityPosture: { identityProtocol: [<span class="value">"OAuth2"</span>, <span class="value">"WebAuthn"</span>] }
-} <span class="syntax">as const</span>;</pre></div>
-      <div class="cta"><div><div class="eyebrow">${t('Open to senior engineering & AI architect leadership roles')}</div><h3>${t('Ready to scale your technical infrastructure?')}</h3><p>${t('Available for remote Staff / Principal Frontend, systems architecture and AI-native engineering advisory.')}</p></div><div class="cta-actions"><a class="button button-light" href="#contact">✉ ${t('Initiate Technical Interview')}</a><a class="button button-outline" href="assets/nicolas-costanza.pdf" download>↓ ${t('Download Detailed Resume')}</a></div></div>
+    <section class="shell"><div class="quick-badges"><span>✓ <b>${t('7 Years')}</b> ${t('Production Experience')}</span><span>▣ <b>TypeScript &amp; React</b> ${t('Full-Lifecycle Expert')}</span><span>◈ <b>50M+ MAU</b> ${t('Enterprise Systems')}</span><span>✦ <b>AI-Native</b> ${t('MCP & SDD')}</span></div><div class="skills-head"><div><div class="eyebrow">${t('Unified Competence Map')}</div><h2>${t('Production-tested domains')}</h2><p>${t('Search across runtime, architecture, AI and reliability capabilities.')}</p></div><input class="search-input" id="skill-search" type="search" placeholder="${t('Search skills')}" aria-label="${t('Search skills')}"></div><div class="skills-grid" id="skills-grid">${data.skills.map(skillCard).join('')}</div>
+      <div class="principles"><div class="eyebrow">${t('Design Ideology')}</div><h2>${t('Architecture Guiding Principles')}</h2><p class="body-copy">${t('Three strict doctrines applied whenever architecting platforms, scaling engineering groups or leading technical redesigns.')}</p><div class="principles-grid"><article class="principle">${icon('01', 'cyan')}<h3>${t('Specification-Driven Development')}</h3><p>${t('Strict schemas, API contracts and invariant models precede syntax so agents and engineers generate coherent, self-validating modules.')}</p><span>${t('Specs and typed contracts precede code')}</span></article><article class="principle">${icon('02')}<h3>${t('Decoupled Microfrontends')}</h3><p>${t('Login and identity frontends are split into independent microfrontends so squads can ship and refactor without blocking each other.')}</p><span>${t('Independent deploys across squads')}</span></article><article class="principle">${icon('03', 'green')}<h3>${t('AI-Assisted, Spec-Verified')}</h3><p>${t('Agents build against shared specs and shared docs, with human review before changes land.')}</p><span>${t('Claude, Codex and Cursor in the loop')}</span></article></div></div>
     </section>`);
 }
 
 function education() {
   const degrees = [
     { icon: '⌘', date: '2017 – Present', title: 'Industrial Engineering', subtitle: 'Ingeniería Industrial', focus: 'Core Engineering Disciplines', chips: ['Systems Thinking', 'Stochastic Analysis', 'Operations Optimization', 'Statistical Quality Control', 'Project Governance'], insight: 'Brings foundational systems-engineering methodology, operational process optimization and quantitative models into distributed software architectures.' },
-    { icon: '✦', date: '2022 – Present', title: 'Technician in Artificial Intelligence', subtitle: 'Técnico Universitario en Inteligencia Artificial', focus: 'Applied AI Coursework', chips: ['Neural Architectures', 'Supervised / Unsupervised ML', 'Vector Spaces & RAG', 'Mathematical Computing', 'Agent Orchestration'], insight: 'Provides formal rigour in mathematical AI foundations, bridging LLM prompting and autonomous agents with mission-critical web application codebases.' },
+    { icon: '✦', date: '2022 – Present', title: 'Technician in Artificial Intelligence', subtitle: 'Técnico Universitario en Inteligencia Artificial', focus: 'Applied AI: Agents & RAG', chips: ['Agent Orchestration', 'RAG'], insight: 'Coursework centered on agent orchestration and RAG, applied to AI-assisted software engineering.' },
   ];
   const degreeCards = degrees.map((degree) => `<article class="degree-card card-lift reveal"><div class="degree-top">${icon(degree.icon, 'cyan')}<div><span class="date-badge">${degree.date}</span><p>Rosario, Santa Fe, AR</p></div></div><span class="institution">Universidad Nacional de Rosario</span><h3>${t(degree.title)}</h3><em>${degree.subtitle}</em><span class="skill-label">${t(degree.focus)}</span><div class="skill-chips">${translatedTags(degree.chips)}</div><div class="insight"><span class="mono-label cyan">${t('◉ Recruiter Engineering Insight')}</span><p>${t(degree.insight)}</p></div></article>`).join('');
   const learning = [
-    ['SYS // ARCH', 'Distributed Systems & Enterprise Architecture', 'Deep focus on microfrontends, asynchronous event streams, message bus orchestration and zero-downtime canary deployments.', ['Event-Driven', 'Kafka / PubSub', 'Microfrontends', 'Blue-Green / Canary']],
+    ['SYS // ARCH', 'Distributed Systems & Enterprise Architecture', 'Deep focus on microfrontends, decoupled login and identity frontends, orchestration between them and frontend re-architecture.', ['Microfrontends', 'Login Orchestration', 'Frontend Re-architecture', 'API Integration']],
     ['AI // AGENTIC', 'AI-Native Development & Agent Orchestration', 'Integration of MCP, autonomous goal-directed agents, deterministic tool calling and structured Specification-Driven Development lifecycles.', ['MCP Protocol', 'Autonomous Agents', 'RAG Ingestion', 'SDD Workflows']],
     ['FRONTEND // CROSS-PLATFORM', 'Advanced Modern Frontend & Mobile', 'Production mastery of React, Next.js Server Components and React Native multi-tenant native bridging architectures.', ['React 19', 'Next.js RSC', 'React Native', 'Design Systems']],
-    ['SEC // INFRA', 'Application Security & Zero-Trust Auth', 'Enterprise identity pipelines: OAuth2 / OpenID Connect, RBAC validation, WebAuthn passkeys and encrypted data-at-rest policies.', ['OAuth 2.0 / OIDC', 'Passkeys / WebAuthn', 'Zero-Trust RBAC', 'PII Compliance']],
+    ['SEC // INFRA', 'Auth & Application Security', 'Authentication and authorization layer work: policies, AuthN / AuthZ, rate limiting and scope segmentation.', ['AuthN / AuthZ', 'Auth Policies', 'Rate Limiting', 'Scopes', 'JWT']],
   ].map(([label, title, body, chips]) => `<article class="learning-card reveal"><span class="mono-label cyan">${label}</span>${icon('⌁')}<h3>${t(title)}</h3><p>${t(body)}</p><div class="card-tags">${translatedTags(chips)}</div></article>`).join('');
   return layout('education', `${pageHeader(`${t('Academic Background & Continuous Learning')} / REF: EDU-2025-NC`, t('Education & Credentials'), t('Formal engineering foundations, specialized AI university curriculum and enterprise-grade distributed systems mastery.'), `<div class="header-chips"><span>▣ UNR Rosario</span><span>✦ ${t('AI Specialization')}</span><span>⌁ ${t('Systems Rigor')}</span></div>`)}
     <section class="shell education-section"><div class="section-heading"><div><span class="section-number">01 //</span><h2>${t('Formal Higher Education')}</h2></div><span class="mono-label">Universidad Nacional de Rosario (UNR)</span></div><div class="degree-grid">${degreeCards}</div></section>
@@ -545,15 +698,15 @@ function contact() {
   ];
   const cards = channels.map((channel) => `<a class="contact-card card-lift reveal" href="${channel.href}"${channel.external ? ' target="_blank" rel="noreferrer"' : ''}${channel.download ? ' download' : ''}>${icon(channel.icon, channel.tone)}<h3>${t(channel.title)}</h3><p>${t(channel.body)}</p><span class="text-link">${t(channel.action)} →</span></a>`).join('');
   return layout('contact', `${pageHeader(t('Open Channel · Recruiter & Engineering Inquiries'), t("Let's talk engineering."), t('Available for senior engineering roles, architectural reviews and AI-native delivery conversations. Direct channels below.'))}
-    <section class="shell section-tight"><div class="contact-grid">${cards}</div><div class="contact-meta"><span class="mono-label">${t('Based in Rosario, Argentina (UTC-3) · Open to remote and hybrid roles.')}</span><a class="button button-light button-small" href="mailto:${email}">✉ ${t('Write an Email')}</a></div></section>`);
+    <section class="shell section-tight"><div class="contact-grid">${cards}</div><div class="contact-meta"><span class="status-dot pulse"></span><span class="mono-label">${t('Based in Rosario, Argentina (UTC-3) · Open to remote and hybrid roles.')}</span></div></section>`);
 }
 
 const modalContent = {
-  mcp: { eyebrow: 'Deep Dive Specification', title: 'Agentic Dev Framework & MCP Suite', body: 'This system decouples AI code generation from passive completions, introducing stateful agents with deterministic tools registered via the Model Context Protocol. Type-safe diffs are verified before file writes.', stat: '3.2x faster', statNote: 'Delivery cycle after MCP and SDD adoption.', code: 'import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";\n\nexport const mcp = new McpServer({\n  name: "enterprise-dev-agent",\n  version: "2.4.0"\n});' },
-  auth: { eyebrow: 'High-Throughput Showcase', title: 'Microfrontend Auth Engine', body: 'A distributed authentication and biometric 2FA microfrontend embedded across business units without cross-origin iframe security penalties.', stat: '18ms', statNote: 'Target handshake latency.', code: 'Shared context bus: Web Worker Broker\nZero downtime rollout: Canary remote bundles\nProtocols: OIDC + PKCE + WebAuthn FIDO2' },
-  sdd: { eyebrow: 'Specification-Driven Dev Pipeline', title: 'Multi-Agent Verification Architecture', body: 'Requirements documents become the single source of truth; generated code is transient and verified by specialist agent roles.', stat: '100%', statNote: 'Pass rate across the verification loop.', code: '1. Spec ingestion\n2. Synthesis agent\n3. Strict type linting\n4. Vitest sandbox\n5. Atomic commit' },
-  qira: { eyebrow: 'Agri-Fintech Core', title: 'Qira Pagos Double-Entry Ledger', body: 'Real-time transactional flows support agricultural barter, invoice financing, multi-signature authorizations and automated reconciliation.', stat: 'ACID', statNote: 'Immutable ledger integrity.', code: 'POST /v2/ledger/journal-entry\nDebit: Supplier Escrow Account\nCredit: Grain Warrant Collateral Vault\nStatus: SETTLED_IMMUTABLE' },
-  mobile: { eyebrow: 'React Native Multi-Tenant', title: 'White-Label Utility Mobile Architecture', body: 'A unified codebase powers customized utility and IoT applications through build-time configuration, runtime theme tokens and feature flags.', stat: '42+', statNote: 'Client builds from one architecture.', code: 'Dynamic brand palette injection\nOffline IoT telemetry sync\nZero-runtime-overhead asset loading' },
+  mcp: { eyebrow: 'Agentic Dev Tooling', title: 'AI-Native Dev System: MCP, Skills & Plugins', body: 'Internal toolchain for agentic engineering: MCP servers, reusable Skills and Plugins plus AGENTS.md conventions so Claude, Codex and Cursor work inside our repositories.', stat: 'MCP', statNote: 'Servers, Skills & Plugins.', code: 'import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";\n\nexport const mcp = new McpServer({\n  name: "internal-dev-agent",\n  version: "1.0.0"\n});' },
+  auth: { eyebrow: 'Identity Frontend', title: 'Login & 2FA Microfrontends', body: 'Login and 2FA frontend at Mercado Libre: factor selection, email / SMS / WhatsApp validation, identification and password steps across decoupled microfrontends.', stat: 'Login / 2FA', statNote: 'Identity frontend at scale.', code: 'Factor selection → validation → orchestration\nIdentity: email / phone (SMS + WhatsApp)\nSteps: identification, password\nArchitecture: decoupled microfrontends' },
+  sdd: { eyebrow: 'Spec-Driven Workflow', title: 'SDD & BDD with Agents', body: 'Specs are the source of truth; agents generate and verify code with shared architecture docs as context.', stat: 'SDD & BDD', statNote: 'Spec-first development.', code: '1. Spec ingestion\n2. AGENTS.md + shared docs context\n3. Agent synthesis (Claude / Codex / Cursor)\n4. Review and verification' },
+  qira: { eyebrow: 'Agri-Tech Payments', title: 'Qira Pagos Wallet', body: 'React Native wallet integrated with the Qira Global e-commerce so customers could pay from the app.', stat: 'Wallet', statNote: 'Integrated with the store.', code: 'App: Qira Pagos (React Native)\nIntegration: Qira Global e-commerce\nBackend: Node.js + Express + MongoDB' },
+  mobile: { eyebrow: 'White-Label Mobile', title: 'White-Label Utility Apps', body: 'One codebase powers customized water, light and gas utility apps: payments, service requests, complaints and consumption tracking.', stat: 'Multi-client', statNote: 'Branded per utility.', code: 'Client-branded React + React Native apps\nVirtual office: payments, visits, complaints\nConsumption tracking per utility' },
 };
 
 function openModal(id) {
@@ -581,6 +734,8 @@ function translateStatic() {
   document.documentElement.lang = currentLanguage;
   document.title = `Nicolás Costanza | ${t('Senior Engineer & AI Architect')}`;
   if (languageSelect) languageSelect.value = currentLanguage;
+  const copyright = document.querySelector('#copyright-year');
+  if (copyright) copyright.textContent = `© ${new Date().getFullYear()} ${t('Nicolás Costanza. All rights reserved.')}`;
 }
 
 function showToast(message) {
@@ -606,7 +761,8 @@ function setLanguage(language) {
 }
 
 function bindInteractions() {
-  document.querySelectorAll('[data-copy-email]').forEach((button) => button.addEventListener('click', async () => {
+  document.querySelectorAll('[data-copy-email]').forEach((button) => button.addEventListener('click', async (event) => {
+    if (button.tagName === 'A') event.preventDefault();
     try { await navigator.clipboard.writeText(email); showToast(t('Email copied to clipboard')); } catch { showToast(email); }
   }));
   document.querySelectorAll('[data-open-modal]').forEach((button) => button.addEventListener('click', () => openModal(button.dataset.openModal)));
@@ -621,18 +777,6 @@ function bindInteractions() {
   }));
   const search = document.querySelector('#skill-search');
   if (search) search.addEventListener('input', () => { const query = search.value.trim().toLowerCase(); document.querySelectorAll('.skill-card[data-tags]').forEach((card) => card.classList.toggle('is-hidden', Boolean(query) && !`${card.dataset.tags} ${card.textContent}`.toLowerCase().includes(query))); });
-  const run = document.querySelector('#run-agent');
-  const clear = document.querySelector('#clear-agent');
-  const output = document.querySelector('#terminal-output');
-  if (run && output) run.addEventListener('click', () => {
-    const status = document.querySelector('#terminal-status');
-    run.disabled = true;
-    if (status) status.textContent = 'RUNNING';
-    output.innerHTML = '';
-    const lines = ['> Parsing specification contract...', '> Spawning generator agent...', '> Running TypeScript static validation...', '> Executing adversarial test matrix...', '> Security guardrails: OWASP Top 10 passed.', '> Agent loop complete. Commit proposal verified.'];
-    lines.forEach((line, index) => window.setTimeout(() => { const div = document.createElement('div'); div.textContent = line; if (index === lines.length - 1) div.className = 'success'; output.append(div); if (index === lines.length - 1) { run.disabled = false; if (status) status.textContent = 'PASS'; } }, index * 420));
-  });
-  if (clear && output) clear.addEventListener('click', () => { output.innerHTML = `<div>${t('> Ready for instructions. Click "Execute Agent Loop" above.')}</div>`; const status = document.querySelector('#terminal-status'); if (status) status.textContent = 'READY'; });
   document.querySelectorAll('[data-view]').forEach((button) => button.addEventListener('click', () => { document.querySelectorAll('[data-view]').forEach((item) => item.classList.toggle('active', item === button)); document.querySelector(button.dataset.view === 'blueprints' ? '.blueprint' : '#skills-grid')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); }));
   const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add('visible'); }), { threshold: 0.08 });
   document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));

@@ -354,6 +354,16 @@ html[data-theme="light"] .impact-row { background: var(--surface); }
 .language-title span { padding: 3px 6px; color: var(--cyan); background: var(--canvas); font: 9px 'JetBrains Mono', monospace; white-space: nowrap; }
 .language-grid p { margin-top: 6px; color: var(--muted); font-size: 11px; line-height: 1.55; }
 
+.section-tight { padding-top: 6px; padding-bottom: 60px; }
+.contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.contact-card { display: flex; min-height: 210px; flex-direction: column; padding: 20px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+.contact-card .icon-box { margin-bottom: 15px; }
+.contact-card h3 { font-size: 16px; }
+.contact-card p { margin-top: 7px; color: var(--muted); font-size: 11px; line-height: 1.55; }
+.contact-card .text-link { margin-top: auto; padding-top: 16px; }
+.contact-meta { display: flex; align-items: center; justify-content: center; gap: 9px; padding-top: 24px; margin-top: 26px; color: var(--muted); border-top: 1px solid var(--line); text-align: center; }
+.contact-meta .mono-label { color: var(--muted); }
+
 .modal-backdrop { position: fixed; z-index: 40; inset: 0; background: rgba(0, 0, 0, .72); backdrop-filter: blur(7px); }
 .modal-backdrop[hidden] { display: none; }
 .modal { position: fixed; z-index: 41; inset: 50% auto auto 50%; display: flex; width: min(700px, calc(100% - 32px)); max-height: calc(100vh - 32px); flex-direction: column; overflow: auto; padding: 23px; border: 1px solid var(--line-strong); border-radius: 6px; background: var(--overlay); box-shadow: 0 16px 45px rgba(0, 0, 0, .65); transform: translate(-50%, -50%); animation: modal-in .2s ease both; }
@@ -415,9 +425,10 @@ html[data-theme="light"] .button-light:hover { background: #334155; }
   .page-header { padding-top: 37px; padding-bottom: 26px; }
   .page-header p { font-size: 14px; }
   .page-header > * + * { margin-top: 18px; }
-  .three-col, .project-grid, .skills-grid, .degree-grid, .learning-grid, .language-grid, .principles-grid { grid-template-columns: 1fr; }
+  .three-col, .project-grid, .skills-grid, .degree-grid, .learning-grid, .language-grid, .principles-grid, .contact-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-column: auto; }
   .project-card { min-height: auto; }
+  .contact-card { min-height: auto; }
   .project-bento { grid-template-columns: 1fr; }
   .experience-toolbar, .filters { align-items: start; flex-direction: column; }
   .query-status { display: none; }
